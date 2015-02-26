@@ -1,0 +1,29 @@
+#!/usr/bin/env mkb
+files
+{
+	
+	[source]
+	(source)
+    Scene.cpp
+	Ship.cpp
+	spaceinvader.cpp
+
+	spaceinvader.h
+	Ship.h
+	Scene.h
+}
+
+subprojects
+{
+    iwutil
+    iw2dscenegraphcore
+    iw2dscenegraph
+    iwgx
+    iwresmanager
+    iwtween
+
+}
+
+deployment
+{
+}
