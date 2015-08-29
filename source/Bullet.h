@@ -35,6 +35,8 @@ public:
 	CIwFMat2D       Transform;              // Transform matrix
 	CIw2DImage*     ShipBullet;				    // curr image 
 	CIwFVec2        Position;               // Position of the sprite
+	CIwFVec2        prevPosition;
+	CIwFVec2        Vel;
 	float           Angle;                  // Rotation of sprite in radians
 	float           Scale;                  // Scale of sprite
 	unsigned int    Colour;                 // Colour of sprite

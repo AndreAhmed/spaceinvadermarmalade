@@ -7,8 +7,8 @@ void Ship::Init()
 	if (Image == nullptr)
 		return;
 
-	Position.x = (float)IwGxGetScreenWidth() / 2;
-	Position.y = IwGxGetScreenHeight() - 50;
+	Position.x = 120;
+	Position.y = 650;
 
 	Visible = true;
 	Angle = 0;
@@ -34,7 +34,12 @@ void Ship::Render()
 
 		// Render image
 		if (Image != 0)
-			Iw2DDrawImage(Image, CIwFVec2(-Image->GetWidth() / 2, -Image->GetHeight() / 2));
+		{
+			int x = -(Image->GetWidth() / 2);
+			int y = -(Image->GetHeight() / 2);
+
+			Iw2DDrawImage(Image, CIwFVec2(x, y), CIwFVec2(Image->GetWidth(), Image->GetHeight()));
+		}
 	}
 
 	for (list<Bullet*>::iterator it = Bullets->begin(); it != Bullets->end(); it++)
@@ -59,7 +64,8 @@ void Ship::Update(float dt)
  		Bullet *bullet = new Bullet();
 		bullet->Init();
 		bullet->SetShipBullet(ShipBulletImage);
-		bullet->setPosition(Position.x, Position.y - 20);
+	
+		bullet->setPosition(Position.x + 2, Position.y - 10);
 		Bullets->push_back(bullet);
 		Canfire = false;
 		NumFire++;

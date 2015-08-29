@@ -1,0 +1,59 @@
+﻿Build started 5/24/2015 9:22:09 PM.
+     1>Project "c:\Users\Ahmed Saleh\Documents\spaceinvader\build_spaceinvader_vc12\spaceinvader_vc12.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Marmalade\7.4\s3e\bin\CL.exe /c /Ic:/marmalade/7.4/modules/iwutil/h /Ic:/marmalade/7.4/modules/third_party/libjpeg/h /Ic:/marmalade/7.4/modules/third_party/zlib/h /Ic:/marmalade/7.4/modules/third_party/libpng/h /Ic:/marmalade/7.4/modules/iw2dscenegraphcore/h /Ic:/marmalade/7.4/modules/iw2dscenegraph/h /Ic:/marmalade/7.4/modules/iw2d/h /Ic:/marmalade/7.4/modules/iwgx/h /Ic:/marmalade/7.4/modules/iwgl/h /Ic:/marmalade/7.4/modules/iwgeom/h /Ic:/marmalade/7.4/modules/iwresmanager/h /Ic:/marmalade/7.4/extensions/pvrtextool/h /Ic:/marmalade/7.4/modules/iwgxfont/h /Ic:/marmalade/7.4/modules/third_party/tiniconv/source /Ic:/marmalade/7.4/modules/iwtween/h /Ic:/marmalade/7.4/s3e/h /Ic:/marmalade/7.4/s3e/h/ext /Ic:/marmalade/7.4/s3e/h/std /Ic:/marmalade/7.4/s3e/h/std/c++ /Ic:/marmalade/7.4/s3e/h/ext_legacy /Ic:/marmalade/7.4/s3e/h/legacy /I. /ZI /nologo /W3 /WX- /MP /Od /Oy- /X /Gm- /EHsc /RTC1 /MTd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug_spaceinvader_vc12_x86\\" /Fd"Debug_spaceinvader_vc12_x86\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt /S3Eproject /J /FI"c:\Users\Ahmed Saleh\Documents\spaceinvader\build_spaceinvader_vc12\temp_defines_debug.h" ..\source\spaceinvader.cpp
+         spaceinvader.cpp
+     1>c:\users\ahmed saleh\documents\spaceinvader\source\spaceinvader.cpp(79): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\ahmed saleh\documents\spaceinvader\source\spaceinvader.cpp(80): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\ahmed saleh\documents\spaceinvader\source\spaceinvader.cpp(236): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\ahmed saleh\documents\spaceinvader\source\spaceinvader.cpp(306): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\ahmed saleh\documents\spaceinvader\source\spaceinvader.cpp(346): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\ahmed saleh\documents\spaceinvader\source\spaceinvader.cpp(348): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+     1>c:\users\ahmed saleh\documents\spaceinvader\source\spaceinvader.cpp(349): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+     1>c:\users\ahmed saleh\documents\spaceinvader\source\spaceinvader.cpp(383): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\ahmed saleh\documents\spaceinvader\source\spaceinvader.cpp(395): warning C4244: 'initializing' : conversion from 'float' to 'int', possible loss of data
+     1>c:\users\ahmed saleh\documents\spaceinvader\source\spaceinvader.cpp(396): warning C4244: 'initializing' : conversion from 'float' to 'int', possible loss of data
+     1>c:\users\ahmed saleh\documents\spaceinvader\source\spaceinvader.cpp(410): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\ahmed saleh\documents\spaceinvader\source\spaceinvader.cpp(575): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\ahmed saleh\documents\spaceinvader\source\spaceinvader.cpp(581): warning C4244: 'argument' : conversion from 'uint32' to 'float', possible loss of data
+     1>c:\users\ahmed saleh\documents\spaceinvader\source\spaceinvader.cpp(582): warning C4244: 'argument' : conversion from 'uint32' to 'float', possible loss of data
+     1>c:\users\ahmed saleh\documents\spaceinvader\source\spaceinvader.cpp(583): warning C4244: 'argument' : conversion from 'uint32' to 'float', possible loss of data
+     1>c:\users\ahmed saleh\documents\spaceinvader\source\spaceinvader.cpp(586): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\ahmed saleh\documents\spaceinvader\source\spaceinvader.cpp(594): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+       Link:
+         C:\Marmalade\7.4\s3e\bin\link.exe /ERRORREPORT:PROMPT /OUT:"Debug_spaceinvader_vc12_x86\spaceinvader.s86" /INCREMENTAL /NOLOGO /LIBPATH:c:/marmalade/7.4/modules/iwutil/lib/x86 /LIBPATH:c:/marmalade/7.4/modules/third_party/libjpeg/lib/x86 /LIBPATH:c:/marmalade/7.4/modules/third_party/zlib/lib/x86 /LIBPATH:c:/marmalade/7.4/modules/third_party/libpng/lib/x86 /LIBPATH:c:/marmalade/7.4/modules/iw2d/lib/x86 /LIBPATH:c:/marmalade/7.4/modules/iwgx/atitools /LIBPATH:c:/marmalade/7.4/modules/iwgx/lib/x86 /LIBPATH:c:/marmalade/7.4/modules/iwgl/lib/x86 /LIBPATH:c:/marmalade/7.4/modules/iwgeom/lib/x86 /LIBPATH:c:/marmalade/7.4/modules/iwresmanager/lib/x86 /LIBPATH:c:/marmalade/7.4/modules/iwgxfont/lib/x86 /LIBPATH:c:/marmalade/7.4/modules/third_party/tiniconv/lib/x86 /LIBPATH:c:/marmalade/7.4/s3e/lib/x86 vc6_compat.lib iwutil_d.lib jpeg_d.lib z_d.lib png_d.lib iw2d_d.lib ATI_Compress_MT_VC7.lib iwgx_d.lib iwgl_d.lib iwgeom_d.lib iwresmanager_d.lib iwgxfont_d.lib tiniconv_d.lib s3e_cpp_d.lib s3e_d.lib s3e_api_iwgl.lib /NODEFAULTLIB:libcmt /MANIFEST:NO /DEBUG /PDB:"Debug_spaceinvader_vc12_x86\spaceinvader.pdb" /SUBSYSTEM:WINDOWS /OPT:NOREF /OPT:NOICF /TLBID:1 /ENTRY:"DllEntryPoint" /DYNAMICBASE /NXCOMPAT /IMPLIB:"Debug_spaceinvader_vc12_x86\spaceinvader.lib" /MACHINE:X86  /include:_IwMain /include:_raise /include:_DllEntryPoint@12 /force:multiple /DLL Debug_spaceinvader_vc12_x86\Iw2DSceneGraph.obj
+         Debug_spaceinvader_vc12_x86\Iw2DSceneGraphCore.obj
+         Debug_spaceinvader_vc12_x86\IwTween.obj
+         Debug_spaceinvader_vc12_x86\PVRTexTool_interface.obj
+         Debug_spaceinvader_vc12_x86\Barrier.obj
+         Debug_spaceinvader_vc12_x86\Bullet.obj
+         Debug_spaceinvader_vc12_x86\Input.obj
+         Debug_spaceinvader_vc12_x86\Invader.obj
+         Debug_spaceinvader_vc12_x86\Rect.obj
+         Debug_spaceinvader_vc12_x86\resources.obj
+         Debug_spaceinvader_vc12_x86\Saucer.obj
+         Debug_spaceinvader_vc12_x86\Ship.obj
+         Debug_spaceinvader_vc12_x86\spaceinvader.obj
+     1>LINK : warning LNK4075: ignoring '/INCREMENTAL' due to '/FORCE' specification
+     1>Iw2DSceneGraph.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/OPT:LBR' specification
+     1>LIBCMTD.lib(sscanf.obj) : warning LNK4006: _vsscanf already defined in s3e_d.lib(iwcrt_win32.obj); second definition ignored
+     1>LIBCMTD.lib(strtoq.obj) : warning LNK4006: _strtof already defined in s3e_d.lib(iwcrt_common.obj); second definition ignored
+            Creating library Debug_spaceinvader_vc12_x86\spaceinvader.lib and object Debug_spaceinvader_vc12_x86\spaceinvader.exp
+     1>Debug_spaceinvader_vc12_x86\spaceinvader.s86 : warning LNK4088: image being generated due to /FORCE option; image may not run
+         spaceinvader_vc12.vcxproj -> c:\Users\Ahmed Saleh\Documents\spaceinvader\build_spaceinvader_vc12\Debug_spaceinvader_vc12_x86\spaceinvader.s86
+       PostBuildEvent:
+         echo C:\Marmalade\7.4\s3e\python\python.exe .\process_map.py "c:\Users\Ahmed Saleh\Documents\spaceinvader\build_spaceinvader_vc12\Debug_spaceinvader_vc12_x86\spaceinvader.s86"
+         chdir /d "c:\marmalade\7.4\s3e\tools"
+         C:\Marmalade\7.4\s3e\python\python.exe .\process_map.py "c:\Users\Ahmed Saleh\Documents\spaceinvader\build_spaceinvader_vc12\Debug_spaceinvader_vc12_x86\spaceinvader.s86"
+         echo "s3e_plink" -l "c:\Users\Ahmed Saleh\Documents\spaceinvader\build_spaceinvader_vc12\Debug_spaceinvader_vc12_x86\spaceinvader.s86" 
+         chdir /d "c:\marmalade\7.4\s3e\bin"
+         "s3e_plink" -l "c:\Users\Ahmed Saleh\Documents\spaceinvader\build_spaceinvader_vc12\Debug_spaceinvader_vc12_x86\spaceinvader.s86" 
+         
+         :VCEnd
+         C:\Marmalade\7.4\s3e\python\python.exe .\process_map.py "c:\Users\Ahmed Saleh\Documents\spaceinvader\build_spaceinvader_vc12\Debug_spaceinvader_vc12_x86\spaceinvader.s86"
+         "s3e_plink" -l "c:\Users\Ahmed Saleh\Documents\spaceinvader\build_spaceinvader_vc12\Debug_spaceinvader_vc12_x86\spaceinvader.s86" 
+     1>Done Building Project "c:\Users\Ahmed Saleh\Documents\spaceinvader\build_spaceinvader_vc12\spaceinvader_vc12.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.40

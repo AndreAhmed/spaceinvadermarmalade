@@ -1,0 +1,1588 @@
+-- START TRACE TO FILE --
+tracing to: ''
+MarmaladeSDK v7.4.3 [415797] (S3E Loader v4.39.0)
+Copyright (C) 2001-2014 Marmalade Technologies Ltd.
+System Info:
+ OS           : WINDOWS (3)
+ OS Version   : Windows 6.1 (6.1)
+ Device ID    : Windows Simulator (0x1)
+ Device Class : WINDOWS_GENERIC (3000)
+ Phone Number : 0044123456789
+ Unique ID    : SIMULATOR_ID
+ Device Name  : My Computer
+ Memory       : 1048576KiB
+24/05/15 21:24:39.809: [0x2b40] DEVICE: Initialising FIBRE
+24/05/15 21:24:39.811: [0x2b40] DEVICE: Initialising THREAD
+24/05/15 21:24:39.812: [0x2b40] THREAD: s3eThreadCreateMain
+24/05/15 21:24:39.812: [0xfa0] DEVICE: Initialising SURFACE
+24/05/15 21:24:39.813: [0xfa0] SURFACE: s3eSurfaceSetup: PixelType=RGB888, pitch=0, ptr=0x00000000, blit=0
+24/05/15 21:24:39.813: [0xfa0] SURFACE: s3eSurfaceSetup: matches native type
+24/05/15 21:24:39.814: [0xfa0] SURFACE: s3eSurfaceSetup: no user surface needed
+24/05/15 21:24:39.816: [0xfa0] SURFACE: done s3eSurfaceInit: 800x600 p:1600 (800x600 p:1600) o:0
+24/05/15 21:24:39.816: [0xfa0] DEVICE: Initialising EXT
+24/05/15 21:24:39.817: [0xfa0] EXT: registering extension: s3eLibrary [0xe6dd6ce5]
+24/05/15 21:24:39.817: [0xfa0] EXT: registering extension: s3eExtLoadLibaray [0xf23d6d85]
+24/05/15 21:24:39.818: [0xfa0] EXT: registering extension: s3eCamera [0xa3e23039]
+24/05/15 21:24:39.819: [0xfa0] EXT: registering extension: s3eWindow [0xd31aa8a8]
+24/05/15 21:24:39.819: [0xfa0] EXT: registering extension: s3eVFS [0x17f48c9f]
+24/05/15 21:24:39.820: [0xfa0] EXT: registering extension: s3eContacts [0x5e39d2af]
+24/05/15 21:24:39.820: [0xfa0] EXT: registering extension: s3eSoundRecord [0x579dbf78]
+24/05/15 21:24:39.821: [0xfa0] EXT: registering extension: s3eTouchpad [0x1dbd7ce8]
+24/05/15 21:24:39.822: [0xfa0] EXT: registering extension: s3eCompass [0x40d632c6]
+24/05/15 21:24:39.822: [0xfa0] EXT: registering extension: Compass [0xd3653f1b]
+24/05/15 21:24:39.823: [0xfa0] EXT: registering extension: s3eDebugHeap [0xc667a795]
+24/05/15 21:24:39.824: [0xfa0] EXT: registering extension: s3eExtDebugHeap [0xff96de46]
+24/05/15 21:24:39.825: [0xfa0] EXT: registering extension: s3eClipboard [0xd68f3420]
+24/05/15 21:24:39.825: [0xfa0] EXT: registering extension: s3eOSExec [0xc121bcf7]
+24/05/15 21:24:39.826: [0xfa0] EXT: registering extension: s3eExtOSExec [0x20380948]
+24/05/15 21:24:39.826: [0xfa0] EXT: registering extension: s3eEval [0x167d1038]
+24/05/15 21:24:39.827: [0xfa0] EXT: registering extension: s3eExtEval [0xf0421449]
+24/05/15 21:24:39.827: [0xfa0] EXT: registering extension: s3eHighResTimer [0x41f2dedb]
+24/05/15 21:24:39.828: [0xfa0] EXT: registering extension: s3eOSReadString [0x9fe3ea45]
+24/05/15 21:24:39.828: [0xfa0] EXT: registering extension: s3eCameraCapture [0xd36aceed]
+24/05/15 21:24:39.828: [0xfa0] EXT: registering extension: s3eTestEmulatorConfig [0x4a0d0a4f]
+24/05/15 21:24:39.829: [0xfa0] EXT: registering extension: s3eThread [0xcc0b4a28]
+24/05/15 21:24:39.829: [0xfa0] EXT: registering extension: s3eSocketOpt [0x09cdcdec]
+24/05/15 21:24:39.830: [0xfa0] EXT: registering extension: s3eExtSocketOpt [0x42fd049d]
+24/05/15 21:24:39.830: [0xfa0] EXT: registering extension: s3eImagePicker [0xd2fc1d51]
+24/05/15 21:24:39.831: [0xfa0] EXT: registering extension: s3eTest [0x168503f0]
+24/05/15 21:24:39.832: [0xfa0] EXT: registering extension: s3eSMS [0x17f480c3]
+24/05/15 21:24:39.832: [0xfa0] EXT: registering extension: s3eMetrics [0x2bc8e047]
+24/05/15 21:24:39.833: [0xfa0] EXT: registering extension: Metrics [0xbe57ec9c]
+24/05/15 21:24:39.833: [0xfa0] EXT: registering extension: s3eLocation [0x91944229]
+24/05/15 21:24:39.834: [0xfa0] EXT: registering extension: Location [0x7604d91e]
+24/05/15 21:24:39.834: [0xfa0] EXT: registering extension: Win32Surface [0x909755c1]
+24/05/15 21:24:39.834: [0xfa0] EXT: registering extension: Win32UIProcessMessage [0x48f2a5ba]
+24/05/15 21:24:39.835: [0xfa0] EXT: registering extension: Win32DataDirChange [0xbfcfc057]
+24/05/15 21:24:39.835: [0xfa0] DEVICE: Initialising CONFIG
+24/05/15 21:24:39.836: [0xfa0] DEVICE: Initialising TIMER
+24/05/15 21:24:39.836: [0xfa0] DEVICE: Initialising COMPRESSION
+24/05/15 21:24:39.837: [0xfa0] DEVICE: DeviceInit done: services=0x0a216148
+24/05/15 21:24:39.837: [0xfa0] EXT: s3eExtGetHash: 0xd31aa8a8 [0x00000000 size=0]
+24/05/15 21:24:39.837: [0xfa0] EXT: initializing extension: s3eWindow
+24/05/15 21:24:39.838: [0xfa0] EXT: initializing extension: s3eWindow 0x0f48c2a0
+24/05/15 21:24:39.838: [0xfa0] DEVICE: SetupPaths: NULL
+24/05/15 21:24:39.839: [0xfa0] LOADER: ParseCommandLineData [-via:"c:\Users\Ahmed Saleh\Documents\spaceinvader\build_spaceinvader_vc12\spaceinvader_vc12_debug.via"]
+24/05/15 21:24:39.839: [0xfa0] LOADER: setting [commandline]  via=c:\Users\Ahmed Saleh\Documents\spaceinvader\build_spaceinvader_vc12\spaceinvader_vc12_debug.via
+24/05/15 21:24:39.840: [0xfa0] LOADER: parsing via file: c:\Users\Ahmed Saleh\Documents\spaceinvader\build_spaceinvader_vc12\spaceinvader_vc12_debug.via
+24/05/15 21:24:39.840: [0xfa0] FILE: s3eFileOpen('c:\Users\Ahmed Saleh\Documents\spaceinvader\build_spaceinvader_vc12\spaceinvader_vc12_debug.via', 'r') succeeded, id=257222392 p=0x0f54e6f8
+24/05/15 21:24:39.841: [0xfa0] LOADER: reading 1081 bytes from via files
+24/05/15 21:24:39.841: [0xfa0] FILE: s3eFileClose h=0x0f54e6f8
+24/05/15 21:24:39.842: [0xfa0] LOADER: ParseCommandLineData [-via:"c:\Users\Ahmed Saleh\Documents\spaceinvader\build_spaceinvader_vc12\spaceinvader_vc12_debug.via" --dll="c:\Users\Ahmed Saleh\Documents\spaceinvader\build_spaceinvader_vc12\Debug_spaceinva
+24/05/15 21:24:39.842: [0xfa0] LOADER: setting [commandline]  via=c:\Users\Ahmed Saleh\Documents\spaceinvader\build_spaceinvader_vc12\spaceinvader_vc12_debug.via
+24/05/15 21:24:39.842: [0xfa0] LOADER: setting [commandline]  dll=c:\Users\Ahmed Saleh\Documents\spaceinvader\build_spaceinvader_vc12\Debug_spaceinvader_VC12_x86\spaceinvader.s86
+24/05/15 21:24:39.843: [0xfa0] LOADER: setting [commandline]  data=c:\Users\Ahmed Saleh\Documents\spaceinvader\data
+24/05/15 21:24:39.843: [0xfa0] LOADER: setting [commandline]  checks3edir=1
+24/05/15 21:24:39.844: [0xfa0] LOADER: setting [commandline]  app-icf1=c:/Users/Ahmed Saleh/Documents/spaceinvader/data/app.icf
+24/05/15 21:24:39.844: [0xfa0] LOADER: setting [commandline]  win32-ext-dll1=c:/marmalade/7.4/extensions/pvrtextool/lib/win32/PVRTexTool.dll
+24/05/15 21:24:39.845: [0xfa0] LOADER: setting [commandline]  config-txt1=c:/Users/Ahmed Saleh/Documents/spaceinvader/data/app.config.txt
+24/05/15 21:24:39.845: [0xfa0] LOADER: setting [commandline]  config-txt2=c:/marmalade/7.4/modules/iw2d/docs/iw2d.config.txt
+24/05/15 21:24:39.846: [0xfa0] LOADER: setting [commandline]  config-txt3=c:/marmalade/7.4/modules/iwgeom/docs/iwgeom.config.txt
+24/05/15 21:24:39.846: [0xfa0] LOADER: setting [commandline]  config-txt4=c:/marmalade/7.4/modules/iwgl/docs/iwgl.config.txt
+24/05/15 21:24:39.847: [0xfa0] LOADER: setting [commandline]  config-txt5=c:/marmalade/7.4/modules/iwgx/docs/iwgx.config.txt
+24/05/15 21:24:39.848: [0xfa0] LOADER: setting [commandline]  config-txt6=c:/marmalade/7.4/modules/iwgxfont/docs/iwgxfont.config.txt
+24/05/15 21:24:39.848: [0xfa0] LOADER: setting [commandline]  config-txt7=c:/marmalade/7.4/modules/iwresmanager/docs/iwresmanager.config.txt
+24/05/15 21:24:39.849: [0xfa0] LOADER: setting [commandline]  config-txt8=c:/marmalade/7.4/modules/iwutil/docs/iwutil.config.txt
+24/05/15 21:24:39.849: [0xfa0] LOADER: setting [commandline]  config-txt9=c:/marmalade/7.4/s3e/s3e.config.txt
+24/05/15 21:24:39.850: [0xfa0] LOADER: setting [commandline]  config-txt10=c:/marmalade/7.4/s3e\s3e.config.txt
+24/05/15 21:24:39.850: [0xfa0] LOADER: setting [commandline]  s3e-dir=c:/marmalade/7.4/s3e
+24/05/15 21:24:39.851: [0xfa0] FILE: new filesystem: drive=0 type=0 ro=1 name=rom://
+24/05/15 21:24:39.851: [0xfa0] FILE: fs[00]: system[rom://] 'c:\Users\Ahmed Saleh\Documents\spaceinvader\data'
+24/05/15 21:24:39.852: [0xfa0] FILE: fs[03]: system[raw://] ''
+24/05/15 21:24:39.852: [0xfa0] FILE: listed 2 active filesystems
+24/05/15 21:24:39.853: [0xfa0] FILE: new filesystem: drive=1 type=0 ro=0 name=ram://
+24/05/15 21:24:39.853: [0xfa0] FILE: fs[00]: system[rom://] 'c:\Users\Ahmed Saleh\Documents\spaceinvader\data'
+24/05/15 21:24:39.853: [0xfa0] FILE: fs[01]: system[ram://] 'c:\Users\Ahmed Saleh\Documents\spaceinvader\data-ram'
+24/05/15 21:24:39.854: [0xfa0] FILE: fs[03]: system[raw://] ''
+24/05/15 21:24:39.854: [0xfa0] FILE: listed 3 active filesystems
+24/05/15 21:24:39.861: [0xfa0] FILE: new filesystem: drive=0 type=0 ro=1 name=rom://
+24/05/15 21:24:39.861: [0xfa0] FILE: new filesystem: drive=1 type=0 ro=0 name=ram://
+24/05/15 21:24:39.862: [0xfa0] LOADER: Using data directory c:\Users\Ahmed Saleh\Documents\spaceinvader\data as ROM drive
+24/05/15 21:24:39.863: [0xfa0] LOADER: Using directory c:\Users\Ahmed Saleh\Documents\spaceinvader\data-ram as RAM drive
+24/05/15 21:24:39.863: [0xfa0] FILE: s3eFileOpen('raw://c:/Users/Ahmed Saleh/Documents/spaceinvader/data/app.config.txt', 'r') succeeded, id=1000 p=0x0f54fdcc
+24/05/15 21:24:39.864: [0xfa0] FILE: s3eFileClose h=0x0f54fdcc
+24/05/15 21:24:39.865: [0xfa0] FILE: s3eFileOpen('raw://c:/marmalade/7.4/modules/iw2d/docs/iw2d.config.txt', 'r') succeeded, id=1001 p=0x0f54fee8
+24/05/15 21:24:39.865: [0xfa0] FILE: s3eFileClose h=0x0f54fee8
+24/05/15 21:24:39.866: [0xfa0] FILE: s3eFileOpen('raw://c:/marmalade/7.4/modules/iwgeom/docs/iwgeom.config.txt', 'r') succeeded, id=1002 p=0x0f550004
+24/05/15 21:24:39.867: [0xfa0] FILE: s3eFileClose h=0x0f550004
+24/05/15 21:24:39.868: [0xfa0] FILE: s3eFileOpen('raw://c:/marmalade/7.4/modules/iwgl/docs/iwgl.config.txt', 'r') succeeded, id=1003 p=0x0f550120
+24/05/15 21:24:39.870: [0xfa0] FILE: s3eFileClose h=0x0f550120
+24/05/15 21:24:39.871: [0xfa0] FILE: s3eFileOpen('raw://c:/marmalade/7.4/modules/iwgx/docs/iwgx.config.txt', 'r') succeeded, id=1004 p=0x0f55023c
+24/05/15 21:24:39.873: [0xfa0] FILE: s3eFileClose h=0x0f55023c
+24/05/15 21:24:39.873: [0xfa0] FILE: s3eFileOpen('raw://c:/marmalade/7.4/modules/iwgxfont/docs/iwgxfont.config.txt', 'r') succeeded, id=1005 p=0x0f550358
+24/05/15 21:24:39.874: [0xfa0] FILE: s3eFileClose h=0x0f550358
+24/05/15 21:24:39.875: [0xfa0] FILE: s3eFileOpen('raw://c:/marmalade/7.4/modules/iwresmanager/docs/iwresmanager.config.txt', 'r') succeeded, id=1006 p=0x0f550474
+24/05/15 21:24:39.876: [0xfa0] FILE: s3eFileClose h=0x0f550474
+24/05/15 21:24:39.877: [0xfa0] FILE: s3eFileOpen('raw://c:/marmalade/7.4/modules/iwutil/docs/iwutil.config.txt', 'r') succeeded, id=1007 p=0x0f550590
+24/05/15 21:24:39.877: [0xfa0] FILE: s3eFileClose h=0x0f550590
+24/05/15 21:24:39.878: [0xfa0] FILE: s3eFileOpen('raw://c:/marmalade/7.4/s3e/s3e.config.txt', 'r') succeeded, id=1008 p=0x0f5506ac
+24/05/15 21:24:39.886: [0xfa0] FILE: s3eFileClose h=0x0f5506ac
+24/05/15 21:24:39.897: [0xfa0] FILE: s3eFileOpen('raw://c:/marmalade/7.4/s3e\s3e.config.txt', 'r') succeeded, id=1009 p=0x0f5507c8
+24/05/15 21:24:39.903: [0xfa0] FILE: s3eFileClose h=0x0f5507c8
+24/05/15 21:24:39.905: [0xfa0] FILE: s3eFileOpen('raw://c:\marmalade\7.4\s3e/s3e.icf', 'rb') succeeded, id=1010 p=0x0f5508e4
+24/05/15 21:24:39.906: [0xfa0] LOADER: Loading config from: c:\marmalade\7.4\s3e/s3e.icf
+24/05/15 21:24:39.907: [0xfa0] FILE: s3eFileClose h=0x0f5508e4
+24/05/15 21:24:39.908: [0xfa0] LOADER: Loading app-icf from command line specified location c:/Users/Ahmed Saleh/Documents/spaceinvader/data/app.icf
+24/05/15 21:24:39.909: [0xfa0] FILE: s3eFileOpen('raw://c:/Users/Ahmed Saleh/Documents/spaceinvader/data/app.icf', 'rb') succeeded, id=1011 p=0x0f550a00
+24/05/15 21:24:39.910: [0xfa0] LOADER: Loading config from: raw://c:/Users/Ahmed Saleh/Documents/spaceinvader/data/app.icf
+24/05/15 21:24:39.911: [0xfa0] FILE: s3eFileClose h=0x0f550a00
+24/05/15 21:24:39.911: [0xfa0] LOADER: ParseCommandLineData [-via:"c:\Users\Ahmed Saleh\Documents\spaceinvader\build_spaceinvader_vc12\spaceinvader_vc12_debug.via"]
+24/05/15 21:24:39.912: [0xfa0] LOADER: setting [commandline]  via=c:\Users\Ahmed Saleh\Documents\spaceinvader\build_spaceinvader_vc12\spaceinvader_vc12_debug.via
+24/05/15 21:24:39.912: [0xfa0] LOADER: parsing via file: c:\Users\Ahmed Saleh\Documents\spaceinvader\build_spaceinvader_vc12\spaceinvader_vc12_debug.via
+24/05/15 21:24:39.913: [0xfa0] FILE: s3eFileOpen('c:\Users\Ahmed Saleh\Documents\spaceinvader\build_spaceinvader_vc12\spaceinvader_vc12_debug.via', 'r') succeeded, id=1012 p=0x0f550b1c
+24/05/15 21:24:39.913: [0xfa0] LOADER: reading 1081 bytes from via files
+24/05/15 21:24:39.914: [0xfa0] FILE: s3eFileClose h=0x0f550b1c
+24/05/15 21:24:39.915: [0xfa0] LOADER: ParseCommandLineData [-via:"c:\Users\Ahmed Saleh\Documents\spaceinvader\build_spaceinvader_vc12\spaceinvader_vc12_debug.via" --dll="c:\Users\Ahmed Saleh\Documents\spaceinvader\build_spaceinvader_vc12\Debug_spaceinva
+24/05/15 21:24:39.915: [0xfa0] LOADER: setting [commandline]  via=c:\Users\Ahmed Saleh\Documents\spaceinvader\build_spaceinvader_vc12\spaceinvader_vc12_debug.via
+24/05/15 21:24:39.916: [0xfa0] LOADER: setting [commandline]  dll=c:\Users\Ahmed Saleh\Documents\spaceinvader\build_spaceinvader_vc12\Debug_spaceinvader_VC12_x86\spaceinvader.s86
+24/05/15 21:24:39.916: [0xfa0] LOADER: setting [commandline]  data=c:\Users\Ahmed Saleh\Documents\spaceinvader\data
+24/05/15 21:24:39.917: [0xfa0] LOADER: setting [commandline]  checks3edir=1
+24/05/15 21:24:39.917: [0xfa0] LOADER: setting [commandline]  app-icf1=c:/Users/Ahmed Saleh/Documents/spaceinvader/data/app.icf
+24/05/15 21:24:39.917: [0xfa0] LOADER: setting [commandline]  win32-ext-dll1=c:/marmalade/7.4/extensions/pvrtextool/lib/win32/PVRTexTool.dll
+24/05/15 21:24:39.917: [0xfa0] LOADER: setting [commandline]  config-txt1=c:/Users/Ahmed Saleh/Documents/spaceinvader/data/app.config.txt
+24/05/15 21:24:39.918: [0xfa0] LOADER: setting [commandline]  config-txt2=c:/marmalade/7.4/modules/iw2d/docs/iw2d.config.txt
+24/05/15 21:24:39.918: [0xfa0] LOADER: setting [commandline]  config-txt3=c:/marmalade/7.4/modules/iwgeom/docs/iwgeom.config.txt
+24/05/15 21:24:39.918: [0xfa0] LOADER: setting [commandline]  config-txt4=c:/marmalade/7.4/modules/iwgl/docs/iwgl.config.txt
+24/05/15 21:24:39.919: [0xfa0] LOADER: setting [commandline]  config-txt5=c:/marmalade/7.4/modules/iwgx/docs/iwgx.config.txt
+24/05/15 21:24:39.919: [0xfa0] LOADER: setting [commandline]  config-txt6=c:/marmalade/7.4/modules/iwgxfont/docs/iwgxfont.config.txt
+24/05/15 21:24:39.919: [0xfa0] LOADER: setting [commandline]  config-txt7=c:/marmalade/7.4/modules/iwresmanager/docs/iwresmanager.config.txt
+24/05/15 21:24:39.920: [0xfa0] LOADER: setting [commandline]  config-txt8=c:/marmalade/7.4/modules/iwutil/docs/iwutil.config.txt
+24/05/15 21:24:39.921: [0xfa0] LOADER: setting [commandline]  config-txt9=c:/marmalade/7.4/s3e/s3e.config.txt
+24/05/15 21:24:39.921: [0xfa0] LOADER: setting [commandline]  config-txt10=c:/marmalade/7.4/s3e\s3e.config.txt
+24/05/15 21:24:39.922: [0xfa0] LOADER: setting [commandline]  s3e-dir=c:/marmalade/7.4/s3e
+24/05/15 21:24:39.922: [0xfa0] LOADER: s3eExecMemoryCheck: Memory free: 1048576K
+24/05/15 21:24:39.924: [0xfa0] FILE: s3eFileOpen('raw://C:\Users\AHMEDS~1\AppData\Local\Temp\\_marm_temp_test_', 'w') succeeded, id=1013 p=0x0f550c38
+24/05/15 21:24:39.925: [0xfa0] FILE: s3eFileClose h=0x0f550c38
+24/05/15 21:24:39.926: [0xfa0] FILE: new filesystem: drive=4 type=0 ro=0 name=tmp://
+24/05/15 21:24:39.927: [0xfa0] FILE: fs[00]: system[rom://] 'c:\Users\Ahmed Saleh\Documents\spaceinvader\data'
+24/05/15 21:24:39.927: [0xfa0] FILE: fs[01]: system[ram://] 'c:\Users\Ahmed Saleh\Documents\spaceinvader\data-ram'
+24/05/15 21:24:39.928: [0xfa0] FILE: fs[03]: system[raw://] ''
+24/05/15 21:24:39.929: [0xfa0] FILE: fs[04]: system[tmp://] 'C:\Users\AHMEDS~1\AppData\Local\Temp\'
+24/05/15 21:24:39.929: [0xfa0] FILE: listed 4 active filesystems
+24/05/15 21:24:40.036: [0xfa0] SURFACE: Fixed Screen Orientation: FixedPortrait
+24/05/15 21:24:40.036: [0xfa0] SURFACE: scaling=1
+24/05/15 21:24:40.137: [0xfa0] SURFACE: s3eSurfaceSetup: PixelType=RGB888, pitch=0, ptr=0x00000000, blit=0
+24/05/15 21:24:40.138: [0xfa0] SURFACE: s3eSurfaceSetup: does not match native type (requested=RGB888 native=RGB565)
+24/05/15 21:24:40.177: [0xfa0] EXT: Registering user-supplied extensions
+24/05/15 21:24:40.179: [0xfa0] EXT: Loading extension dll c:/marmalade/7.4/extensions/pvrtextool/lib/win32/PVRTexTool_d.dll
+24/05/15 21:24:40.193: [0xfa0] LOADER: GL not present, resolving all GL symbols to unavailable
+24/05/15 21:24:40.196: [0xfa0] EXT: registering extension: PVRTexTool [0xb6b3ceac]
+24/05/15 21:24:40.197: [0xfa0] FIBRE: stack switch : enabled
+24/05/15 21:24:40.197: [0xfa0] FIBRE: fast switch  : disabled
+24/05/15 21:24:40.197: [0xfa0] FIBRE: global lock  : enabled
+24/05/15 21:24:40.198: [0xfa0] FIBRE: fast lock    : disabled
+24/05/15 21:24:40.198: [0xfa0] FIBRE: thunks       : enabled
+24/05/15 21:24:40.199: [0xfa0] LOADER: Calling s3eDeviceInit()
+24/05/15 21:24:40.200: [0xfa0] DEVICE: DeviceInit: services=0xfffdffff [0xe5dc9eb7]
+24/05/15 21:24:40.200: [0xfa0] DEVICE: Initialising CALLBACKS
+24/05/15 21:24:40.201: [0xfa0] DEVICE: Initialising CRYPTO
+24/05/15 21:24:40.201: [0xfa0] DEVICE: Initialising ERROR
+24/05/15 21:24:40.202: [0xfa0] DEVICE: Initialising SOCKET
+24/05/15 21:24:40.202: [0xfa0] DEVICE: Initialising STORAGE
+24/05/15 21:24:40.203: [0xfa0] DEVICE: Initialising VIBRA
+24/05/15 21:24:40.203: [0xfa0] DEVICE: Initialising KEYBOARD
+24/05/15 21:24:40.204: [0xfa0] DEVICE: Initialising POINTER
+24/05/15 21:24:40.205: [0xfa0] DEVICE: Initialising ACCELEROMETER
+24/05/15 21:24:40.205: [0xfa0] ACCELEROMETER: damping=0 scaling=0
+24/05/15 21:24:40.205: [0xfa0] DEVICE: Initialising SOUND
+24/05/15 21:24:40.238: [0xfa0] SOUND: stereo sound enabled
+24/05/15 21:24:40.239: [0xfa0] SOUND: s3eSoundStop: started=0
+24/05/15 21:24:40.240: [0xfa0] SOUND: SetMasterVolume: 255 -> 256
+24/05/15 21:24:40.241: [0xfa0] DEVICE: Initialising AUDIO
+24/05/15 21:24:40.242: [0xfa0] AUDIO: Number of channels = 16
+24/05/15 21:24:40.243: [0xfa0] DEVICE: Initialising VIDEO
+24/05/15 21:24:40.243: [0xfa0] DEVICE: Initialising LICENSE
+24/05/15 21:24:40.244: [0xfa0] DEVICE: Initialising GL
+24/05/15 21:24:40.244: [0xfa0] DEVICE: DeviceInit done: services=0xfffdffff
+24/05/15 21:24:40.253: [0x1a24] SURFACE: s3eSurfaceSetup: PixelType=RGB888, pitch=0, ptr=0x00000000, blit=0
+24/05/15 21:24:40.253: [0x1a24] SURFACE: s3eSurfaceSetup: does not match native type (requested=RGB888 native=RGB565)
+24/05/15 21:24:40.262: [0xfa0] SPLASH: displaying debug splash-screen
+24/05/15 21:24:40.287: [0xfa0] LICENSE: SplashScreenRequired: Splash set in licenseText
+24/05/15 21:24:40.309: [0xfa0] LICENSE: LicenseType: ret true : output=Free
+24/05/15 21:24:40.310: [0xfa0] SPLASH: No splash screen specified
+24/05/15 21:24:40.316: [0xfa0] LOADER: s3eExecInit Done
+24/05/15 21:24:40.319: [0xfa0] LOADER: found initial S3E file: raw://c:\Users\Ahmed Saleh\Documents\spaceinvader\build_spaceinvader_vc12\Debug_spaceinvader_VC12_x86\spaceinvader.s86
+24/05/15 21:24:40.320: [0xfa0] DEVICE: s3eExecPushNext: raw://c:\Users\Ahmed Saleh\Documents\spaceinvader\build_spaceinvader_vc12\Debug_spaceinvader_VC12_x86\spaceinvader.s86 [root=NULL 0x00000000 0x00000000]
+24/05/15 21:24:40.320: [0xfa0] DEVICE: s3eExecPushNext: raw://c:\Users\Ahmed Saleh\Documents\spaceinvader\build_spaceinvader_vc12\Debug_spaceinvader_VC12_x86\spaceinvader.s86
+24/05/15 21:24:40.320: [0xfa0] LOADER: s3eExecDoExecuteLoop
+24/05/15 21:24:40.346: [0xfa0] LICENSE: LicenseType: ret true : output=Free
+24/05/15 21:24:40.348: [0xfa0] SOCKET: s3eSocketCreate -> p=0x0f5f4b9c id=3000
+24/05/15 21:24:40.350: [0xfa0] SOCKET: s3eInetLookup: 'www.google-analytics.com'
+24/05/15 21:24:40.364: [0xfa0] SOCKET: s3eInetLookup (synchronous): done DNS: '212.247.12.180:0'
+24/05/15 21:24:40.365: [0xfa0] SOCKET: s3eSocketConnect: 0x0f5f4b9c -> 212.247.12.180:80
+24/05/15 21:24:40.366: [0xfa0] SOCKET: TryConnect error: 10036
+24/05/15 21:24:40.366: [0xfa0] SOCKET: Connect: FAILED (0: )
+24/05/15 21:24:40.385: [0xfa0] LOADER: AppVersion: 4 39
+24/05/15 21:24:40.386: [0xfa0] LOADER: S3E Version    : 4.39.0
+24/05/15 21:24:40.386: [0xfa0] LOADER: Arch           : X86
+24/05/15 21:24:40.387: [0xfa0] LOADER: VFP            : 1
+24/05/15 21:24:40.387: [0xfa0] LOADER: App S3E Version: 4.39.0
+24/05/15 21:24:40.388: [0xfa0] LOADER: App arch       : X86
+24/05/15 21:24:40.388: [0xfa0] LOADER: App VFP        : 0
+24/05/15 21:24:40.389: [0xfa0] LOADER: new s3eExecHandle = 0x00155e20
+24/05/15 21:24:40.419: [0xfa0] SOCKET: TryConnect error: 10056
+24/05/15 21:24:40.420: [0xfa0] SOCKET: NotifyConnect: 3000 0x0f5f4b9c
+24/05/15 21:24:40.421: [0xfa0] FILE: s3eFileOpen('ident.free', 'r') succeeded, id=1014 p=0x0f550d54
+24/05/15 21:24:40.421: [0xfa0] FILE: s3eFileOpen('ram://uident.free', 'r') succeeded, id=1015 p=0x0f550e70
+24/05/15 21:24:40.422: [0xfa0] FILE: s3eFileClose h=0x0f550e70
+24/05/15 21:24:40.423: [0xfa0] SOCKET: s3eSocketClose: 0x0f5f4b9c open=1
+24/05/15 21:24:42.268: [0xfa0] LOADER: Screen size: 359 711
+24/05/15 21:24:42.271: [0xfa0] FILE: s3eFileOpen('raw://C:\Marmalade\7.4\s3e/deploy/resources/mwm-splash-320.jpg', 'rb') succeeded, id=1016 p=0x0f550f8c
+24/05/15 21:24:42.273: [0xfa0] FILE: s3eFileClose h=0x0f550f8c
+24/05/15 21:24:42.282: [0xfa0] VIDEO: s3eVideoPlay raw://C:\Marmalade\7.4\s3e/deploy/resources/mwm-splash-320.jpg
+24/05/15 21:24:42.284: [0xfa0] FILE: s3eFileOpen('raw://C:\Marmalade\7.4\s3e/deploy/resources/mwm-splash-320.jpg', 'rb') succeeded, id=1017 p=0x0f5510a8
+24/05/15 21:24:42.285: [0xfa0] VIDEO: data in in JPG (EXIF) format
+24/05/15 21:24:42.285: [0xfa0] FILE: s3eFileClose h=0x0f5510a8
+24/05/15 21:24:42.286: [0xfa0] VIDEO: s3eVideoPlay w=320 h=320
+24/05/15 21:24:42.287: [0xfa0] JPEG: s3eVideoPlay_jpeglib: raw://C:\Marmalade\7.4\s3e/deploy/resources/mwm-splash-320.jpg
+24/05/15 21:24:42.287: [0xfa0] FILE: s3eFileOpen('raw://C:\Marmalade\7.4\s3e/deploy/resources/mwm-splash-320.jpg', 'rb') succeeded, id=1018 p=0x0f5511c4
+24/05/15 21:24:42.287: [0xfa0] JPEG: loading jpeg file: raw://C:\Marmalade\7.4\s3e/deploy/resources/mwm-splash-320.jpg [37220]
+24/05/15 21:24:42.288: [0xfa0] JPEG: jpeg head was read: [320x320]
+24/05/15 21:24:42.291: [0xfa0] JPEG: CanvasSink: canvas[320x320], pos[19x195], display[(0-320)x(0-320)]
+24/05/15 21:24:42.292: [0xfa0] JPEG: from [320x320] to [320x320]
+24/05/15 21:24:42.306: [0xfa0] FILE: s3eFileClose h=0x0f5511c4
+24/05/15 21:24:42.308: [0xfa0] VIDEO: s3eVideoPlay done: 0
+24/05/15 21:24:44.269: [0xfa0] FILE: s3eFileOpen('raw://C:\Marmalade\7.4\s3e/deploy/resources/ads/ad.320.jpg', 'rb') succeeded, id=1019 p=0x0f5512e0
+24/05/15 21:24:44.272: [0xfa0] VIDEO: s3eVideoPlay raw://C:\Marmalade\7.4\s3e/deploy/resources/ads/ad.320.jpg
+24/05/15 21:24:44.273: [0xfa0] FILE: s3eFileOpen('raw://C:\Marmalade\7.4\s3e/deploy/resources/ads/ad.320.jpg', 'rb') succeeded, id=1020 p=0x0f5513fc
+24/05/15 21:24:44.273: [0xfa0] VIDEO: data in in JPG (EXIF) format
+24/05/15 21:24:44.274: [0xfa0] FILE: s3eFileClose h=0x0f5513fc
+24/05/15 21:24:44.275: [0xfa0] VIDEO: s3eVideoPlay w=320 h=320
+24/05/15 21:24:44.276: [0xfa0] JPEG: s3eVideoPlay_jpeglib: raw://C:\Marmalade\7.4\s3e/deploy/resources/ads/ad.320.jpg
+24/05/15 21:24:44.277: [0xfa0] FILE: s3eFileOpen('raw://C:\Marmalade\7.4\s3e/deploy/resources/ads/ad.320.jpg', 'rb') succeeded, id=1021 p=0x0f551518
+24/05/15 21:24:44.278: [0xfa0] JPEG: loading jpeg file: raw://C:\Marmalade\7.4\s3e/deploy/resources/ads/ad.320.jpg [30325]
+24/05/15 21:24:44.279: [0xfa0] JPEG: jpeg head was read: [320x320]
+24/05/15 21:24:44.288: [0xfa0] JPEG: CanvasSink: canvas[320x320], pos[19x195], display[(0-320)x(0-320)]
+24/05/15 21:24:44.294: [0xfa0] JPEG: from [320x320] to [320x320]
+24/05/15 21:24:44.317: [0xfa0] FILE: s3eFileClose h=0x0f551518
+24/05/15 21:24:44.318: [0xfa0] VIDEO: s3eVideoPlay done: 0
+24/05/15 21:24:50.274: [0xfa0] SURFACE: s3eSurfaceSetup: PixelType=RGB565, pitch=0, ptr=0x00000000, blit=0
+24/05/15 21:24:50.275: [0xfa0] SURFACE: s3eSurfaceSetup: matches native type
+24/05/15 21:24:50.275: [0xfa0] SURFACE: s3eSurfaceSetup: no user surface needed
+24/05/15 21:24:50.277: [0xfa0] LOADER: Calling s3eDeviceInit(S3E_DEVICE_INIT_MEMORY)
+24/05/15 21:24:50.278: [0xfa0] DEVICE: DeviceInit: services=0x00020000 [0x00020000]
+24/05/15 21:24:50.281: [0xfa0] DEVICE: Initialising MEMORY
+24/05/15 21:24:50.282: [0xfa0] MEMORY: Loader heap size=30000
+24/05/15 21:24:50.317: [0xfa0] MEMORY: Initialised heap 0 [0x09a91be4-0x0ca40c64] size=50000000
+24/05/15 21:24:50.318: [0xfa0] MEMORY: Initialised heap 7 [0x00db1464-0x00dbdc64] size=51200
+24/05/15 21:24:50.319: [0xfa0] MEMORY: s3eMemorySetUserMemMgr 0x00191d80 0x00191fc0 0x00191a98
+24/05/15 21:24:50.320: [0xfa0] DEVICE: DeviceInit done: services=0x00020000
+24/05/15 21:24:50.321: [0xfa0] LOADER: IwS3EGetEntryPoint -> 0x083e09b0
+24/05/15 21:24:50.322: [0xfa0] LOADER: Executing S3E 0x00155e20 [c:\Users\Ahmed Saleh\Documents\spaceinvader\build_spaceinvader_vc12\Debug_spaceinvader_VC12_x86\spaceinvader.s86] entry=0x083e09b0
+24/05/15 21:24:50.323: [0xfa0] EXT: s3eExtGetHash: 0xcc0b4a28 [0x09255f48 size=76]
+24/05/15 21:24:50.324: [0xfa0] EXT: initializing extension: s3eThread
+24/05/15 21:24:50.324: [0xfa0] EXT: initializing extension: s3eThread 0x0f468120
+24/05/15 21:24:50.325: [0xfa0] MEMORY: s3eMemorySetUserMemMgr 0x08399570 0x08399590 0x08399580
+24/05/15 21:24:50.327: [0xfa0] GX_VERBOSE: IwGxInitBase()
+24/05/15 21:24:50.328: [0xfa0] EXT: s3eExtGetHash: 0x2bc8e047 [0x09255d60 size=72]
+24/05/15 21:24:50.328: [0xfa0] EXT: initializing extension: s3eMetrics
+24/05/15 21:24:50.330: [0xfa0] EXT: s3eExtGetHash: 0xc667a795 [0x09255db0 size=8]
+24/05/15 21:24:50.331: [0xfa0] EXT: initializing extension: s3eDebugHeap
+24/05/15 21:24:50.331: [0xfa0] MEMORY: s3eExtDebugHeapAlloc: 5242880 bytes allocated for system debug heap
+24/05/15 21:24:50.338: [0xfa0] UTIL: IwCallStackInit
+24/05/15 21:24:50.340: [0xfa0] GX_VERBOSE: Registering for S3E_SURFACE_SCREENSIZE callback
+24/05/15 21:24:50.340: [0xfa0] SURFACE: s3eSurfaceSetup: PixelType=RGB565, pitch=0, ptr=0x00000000, blit=4
+24/05/15 21:24:50.341: [0xfa0] SURFACE: s3eSurfaceSetup: matches native type
+24/05/15 21:24:50.341: [0xfa0] SURFACE: s3eSurfaceSetup: no user surface needed
+24/05/15 21:24:50.342: [0xfa0] GX: IwGxSetScreenOrient: 0
+24/05/15 21:24:50.358: [0xfa0] IW_GL: EGL: eglGetDisplay returned 07573A70
+24/05/15 21:24:50.412: [0xfa0] IW_GL: eglInitialise succeeded - version 1.4
+24/05/15 21:24:50.413: [0xfa0] IW_GL: S3E_EGL_VERSION: 0104
+24/05/15 21:24:50.414: [0xfa0] IW_GL: S3E_GL_VERSION: 0200
+24/05/15 21:24:50.414: [0xfa0] IW_GL: EGL_VENDOR: Google Inc.
+24/05/15 21:24:50.416: [0xfa0] IW_GL: EGL_VERSION: 1.4 (ANGLE 1.0.0.1275)
+24/05/15 21:24:50.416: [0xfa0] IW_GL:     EGL_EXT_create_context_robustness
+24/05/15 21:24:50.417: [0xfa0] IW_GL:     EGL_ANGLE_d3d_share_handle_client_buffer
+24/05/15 21:24:50.417: [0xfa0] IW_GL:     EGL_ANGLE_query_surface_pointer
+24/05/15 21:24:50.418: [0xfa0] IW_GL:     EGL_ANGLE_surface_d3d_texture_2d_share_handle
+24/05/15 21:24:50.418: [0xfa0] IW_GL:     EGL_NV_post_sub_buffer
+24/05/15 21:24:50.419: [0xfa0] GL_CORE: rejecting config 0: EGL_DEPTH_SIZE < 16
+24/05/15 21:24:50.421: [0xfa0] GL_CORE: rejecting config 4: EGL_CONFIG_CAVEAT == EGL_SLOW_CONFIG
+24/05/15 21:24:50.421: [0xfa0] GL_CORE: rejecting config 5: EGL_CONFIG_CAVEAT == EGL_SLOW_CONFIG
+24/05/15 21:24:50.422: [0xfa0] GL_CORE: rejecting config 6: EGL_CONFIG_CAVEAT == EGL_SLOW_CONFIG
+24/05/15 21:24:50.423: [0xfa0] GL_CORE: rejecting config 7: EGL_CONFIG_CAVEAT == EGL_SLOW_CONFIG
+24/05/15 21:24:50.424: [0xfa0] GL_CORE: rejecting config 8: EGL_CONFIG_CAVEAT == EGL_SLOW_CONFIG
+24/05/15 21:24:50.425: [0xfa0] GL_CORE: rejecting config 9: EGL_CONFIG_CAVEAT == EGL_SLOW_CONFIG
+24/05/15 21:24:50.426: [0xfa0] GL_CORE: rejecting config 10: EGL_CONFIG_CAVEAT == EGL_SLOW_CONFIG
+24/05/15 21:24:50.426: [0xfa0] GL_CORE: rejecting config 11: EGL_CONFIG_CAVEAT == EGL_SLOW_CONFIG
+24/05/15 21:24:50.426: [0xfa0] GL_CORE: EGL: Chose EGL_CONFIG_ID 3
+24/05/15 21:24:50.453: [0xfa0] IW_GL: GL_VENDOR: Google Inc.
+24/05/15 21:24:50.454: [0xfa0] IW_GL: GL_RENDERER: ANGLE (NVIDIA GeForce 840M      )
+24/05/15 21:24:50.456: [0xfa0] IW_GL: GL_VERSION: OpenGL ES 2.0 (ANGLE 1.0.0.1275)
+24/05/15 21:24:50.457: [0xfa0] IW_GL: GL properties reported by driver:
+24/05/15 21:24:50.458: [0xfa0] IW_GL:     GL_MAX_COMBINED_TEXTURE_IMAGE_UNITS: 20
+24/05/15 21:24:50.458: [0xfa0] IW_GL:     GL_SHADER_COMPILER: 1
+24/05/15 21:24:50.460: [0xfa0] IW_GL:     GL_MAX_VERTEX_ATTRIBS: 16
+24/05/15 21:24:50.460: [0xfa0] IW_GL:     GL_MAX_VERTEX_UNIFORM_VECTORS: 254
+24/05/15 21:24:50.461: [0xfa0] IW_GL:     GL_MAX_VARYING_VECTORS: 10
+24/05/15 21:24:50.462: [0xfa0] IW_GL:     GL_MAX_TEXTURE_IMAGE_UNITS: 16
+24/05/15 21:24:50.462: [0xfa0] IW_GL:     GL_MAX_VERTEX_TEXTURE_IMAGE_UNITS: 4
+24/05/15 21:24:50.463: [0xfa0] IW_GL:     GL_MAX_FRAGMENT_UNIFORM_VECTORS: 221
+24/05/15 21:24:50.463: [0xfa0] IW_GL:     GL_MAX_CUBE_MAP_TEXTURE_SIZE: 16384
+24/05/15 21:24:50.464: [0xfa0] IW_GL:     GL_IMPLEMENTATION_COLOR_READ_FORMAT: GL_RGB
+24/05/15 21:24:50.465: [0xfa0] IW_GL:     GL_IMPLEMENTATION_COLOR_READ_TYPE: GL_UNSIGNED_SHORT_5_6_5
+24/05/15 21:24:50.465: [0xfa0] IW_GL:     GL_MAX_RENDERBUFFER_SIZE: 16384
+24/05/15 21:24:50.466: [0xfa0] IW_GL:     GL_POINT_SIZE_MAX: -1
+24/05/15 21:24:50.467: [0xfa0] IW_GL:     GL_MAX_TEXTURE_SIZE: 16384
+24/05/15 21:24:50.468: [0xfa0] IW_GL:     GL_MAX_VIEWPORT_DIMS: (16384, 16384)
+24/05/15 21:24:50.468: [0xfa0] IW_GL: Supported GL_EXTENSIONS:
+24/05/15 21:24:50.470: [0xfa0] IW_GL:     GL_OES_packed_depth_stencil
+24/05/15 21:24:50.471: [0xfa0] IW_GL:     GL_OES_element_index_uint
+24/05/15 21:24:50.471: [0xfa0] IW_GL:     GL_OES_texture_half_float_linear
+24/05/15 21:24:50.472: [0xfa0] IW_GL:     GL_NV_fence
+24/05/15 21:24:50.472: [0xfa0] IW_GL:     GL_EXT_read_format_bgra
+24/05/15 21:24:50.473: [0xfa0] IW_GL:     GL_OES_get_program_binary
+24/05/15 21:24:50.474: [0xfa0] IW_GL:     GL_OES_rgb8_rgba8
+24/05/15 21:24:50.475: [0xfa0] IW_GL:     GL_EXT_texture_compression_dxt1
+24/05/15 21:24:50.475: [0xfa0] IW_GL:     GL_ANGLE_texture_compression_dxt3
+24/05/15 21:24:50.476: [0xfa0] IW_GL:     GL_ANGLE_texture_compression_dxt5
+24/05/15 21:24:50.477: [0xfa0] IW_GL:     GL_ARB_texture_env_combine
+24/05/15 21:24:50.478: [0xfa0] IW_GL:     GL_OES_texture_npot
+24/05/15 21:24:50.479: [0xfa0] IW_GL:     GL_EXT_texture_format_BGRA8888
+24/05/15 21:24:50.479: [0xfa0] IW_GL:     GL_OES_texture_half_float
+24/05/15 21:24:50.480: [0xfa0] IW_GL:     GL_ANGLE_framebuffer_multisample
+24/05/15 21:24:50.481: [0xfa0] IW_GL:     GL_ANGLE_framebuffer_blit
+24/05/15 21:24:50.481: [0xfa0] IW_GL:     GL_OES_standard_derivatives
+24/05/15 21:24:50.483: [0xfa0] IW_GL:     GL_OES_texture_float
+24/05/15 21:24:50.483: [0xfa0] IW_GL:     GL_OES_texture_float_linear
+24/05/15 21:24:50.485: [0xfa0] IW_GL:     GL_EXT_texture_filter_anisotropic
+24/05/15 21:24:50.486: [0xfa0] IW_GL:     GL_ANGLE_depth_texture
+24/05/15 21:24:50.486: [0xfa0] SURFACE: s3eSurfaceSetup: PixelType=RGB565, pitch=0, ptr=0x00000000, blit=4
+24/05/15 21:24:50.487: [0xfa0] SURFACE: s3eSurfaceSetup: matches native type
+24/05/15 21:24:50.488: [0xfa0] SURFACE: s3eSurfaceSetup: no user surface needed
+24/05/15 21:24:50.523: [0xfa0] GX: Parsing GL driver strings
+24/05/15 21:24:50.524: [0xfa0] GX_VERBOSE: Hardware capabilities:
+24/05/15 21:24:50.525: [0xfa0] FILE: s3eFileOpen('resource_cache/cachedSize.bin', 'rb') succeeded, id=1022 p=0x0f551634
+24/05/15 21:24:50.526: [0xfa0] FILE: s3eFileClose h=0x0f551634
+24/05/15 21:24:50.527: [0xfa0] UTIL: Added class factory for CIwGxShaderTechnique (hash 0x62ab11c4)
+24/05/15 21:24:50.528: [0xfa0] UTIL: Added class factory for CIwGxCubeMap (hash 0x5474a064)
+24/05/15 21:24:50.529: [0xfa0] GX_VERBOSE: IwGxInit() end
+24/05/15 21:24:50.529: [0xfa0] GX_VERBOSE: _IwGxInitGL()
+24/05/15 21:24:50.531: [0xfa0] GX_VERBOSE: Reported: Max texture stages 20. Max dimensions 16384x16384
+24/05/15 21:24:50.532: [0xfa0] GX_VERBOSE: Default framebuffer binding is 0
+24/05/15 21:24:50.533: [0xfa0] GX_VERBOSE: _IwGxInitGL() end
+24/05/15 21:24:50.535: [0xfa0] UTIL: Added class factory for CIwResTemplateImage (hash 0x4d5ab6b1)
+24/05/15 21:24:50.536: [0xfa0] UTIL: Added class factory for CIwResTemplateMTL (hash 0x3a22b5bb)
+24/05/15 21:24:50.537: [0xfa0] UTIL: Added class factory for CIwResTemplateGROUP (hash 0x4d3980fb)
+24/05/15 21:24:50.539: [0xfa0] UTIL: Added class factory for CIwMaterial (hash 0x2544f997)
+24/05/15 21:24:50.542: [0xfa0] UTIL: Added class factory for CIwResGroup (hash 0xf446397f)
+24/05/15 21:24:50.543: [0xfa0] UTIL: Added class factory for CIwTexture (hash 0x3521f539)
+24/05/15 21:24:50.544: [0xfa0] UTIL: Added class factory for CIwResBuildStyle (hash 0xa59f2593)
+24/05/15 21:24:50.545: [0xfa0] RESMANAGER: Added serialise block for ResGroupMembers
+24/05/15 21:24:50.546: [0xfa0] RESMANAGER: Added serialise block for ResGroupBuildData
+24/05/15 21:24:50.547: [0xfa0] RESMANAGER: Added serialise block for ResGroupChildPaths
+24/05/15 21:24:50.548: [0xfa0] RESMANAGER: Added serialise block for ResGroupHST
+24/05/15 21:24:50.549: [0xfa0] RESMANAGER: Added serialise block for ResGroupDirectory
+24/05/15 21:24:50.550: [0xfa0] RESMANAGER: Added serialise block for ResGroupResources
+24/05/15 21:24:50.551: [0xfa0] RESMANAGER: Added serialise block for ResGroupResourcesOptimised
+24/05/15 21:24:50.553: [0xfa0] RESMANAGER: Setting build style to 'gles1'
+24/05/15 21:24:50.554: [0xfa0] UTIL: Added class factory for CIwGxFont (hash 0xa68776be)
+24/05/15 21:24:50.555: [0xfa0] UTIL: Added class factory for CIwGxFontTTFont (hash 0xc084661d)
+24/05/15 21:24:50.556: [0xfa0] UTIL: Added class factory for CIwResTemplateGXFONT (hash 0xf4d12aa4)
+24/05/15 21:24:50.558: [0xfa0] EXT: s3eExtGetHash: 0x9fe3ea45 [0x09255d28 size=16]
+24/05/15 21:24:50.560: [0xfa0] EXT: initializing extension: s3eOSReadString
+24/05/15 21:24:50.561: [0xfa0] UTIL: Found 'textures/ship_bullet.png' using default path
+24/05/15 21:24:50.562: [0xfa0] FILE: s3eFileOpen('textures/ship_bullet.png', 'rb') succeeded, id=1023 p=0x0f551750
+24/05/15 21:24:50.564: [0xfa0] FILE: s3eFileClose h=0x0f551750
+24/05/15 21:24:50.569: [0xfa0] UTIL: Found 'textures/saucer.png' using default path
+24/05/15 21:24:50.571: [0xfa0] FILE: s3eFileOpen('textures/saucer.png', 'rb') succeeded, id=1024 p=0x0f55186c
+24/05/15 21:24:50.574: [0xfa0] FILE: s3eFileClose h=0x0f55186c
+24/05/15 21:24:50.579: [0xfa0] UTIL: Found 'textures/enemy_top.png' using default path
+24/05/15 21:24:50.580: [0xfa0] FILE: s3eFileOpen('textures/enemy_top.png', 'rb') succeeded, id=1025 p=0x0f551988
+24/05/15 21:24:50.583: [0xfa0] FILE: s3eFileClose h=0x0f551988
+24/05/15 21:24:50.588: [0xfa0] UTIL: Found 'textures/enemy_mid.png' using default path
+24/05/15 21:24:50.590: [0xfa0] FILE: s3eFileOpen('textures/enemy_mid.png', 'rb') succeeded, id=1026 p=0x0f551aa4
+24/05/15 21:24:50.594: [0xfa0] FILE: s3eFileClose h=0x0f551aa4
+24/05/15 21:24:50.601: [0xfa0] UTIL: Found 'textures/enemy_bot.png' using default path
+24/05/15 21:24:50.603: [0xfa0] FILE: s3eFileOpen('textures/enemy_bot.png', 'rb') succeeded, id=1027 p=0x0f551bc0
+24/05/15 21:24:50.605: [0xfa0] FILE: s3eFileClose h=0x0f551bc0
+24/05/15 21:24:50.621: [0xfa0] UTIL: Found 'textures/barrier.png' using default path
+24/05/15 21:24:50.624: [0xfa0] FILE: s3eFileOpen('textures/barrier.png', 'rb') succeeded, id=1028 p=0x0f551cdc
+24/05/15 21:24:50.627: [0xfa0] FILE: s3eFileClose h=0x0f551cdc
+24/05/15 21:24:50.640: [0xfa0] UTIL: Found 'textures/damage.png' using default path
+24/05/15 21:24:50.642: [0xfa0] FILE: s3eFileOpen('textures/damage.png', 'rb') succeeded, id=1029 p=0x0f551df8
+24/05/15 21:24:50.644: [0xfa0] FILE: s3eFileClose h=0x0f551df8
+24/05/15 21:24:50.653: [0xfa0] UTIL: Found 'textures/barrier_1.png' using default path
+24/05/15 21:24:50.654: [0xfa0] FILE: s3eFileOpen('textures/barrier_1.png', 'rb') succeeded, id=1030 p=0x0f551f14
+24/05/15 21:24:50.656: [0xfa0] FILE: s3eFileClose h=0x0f551f14
+24/05/15 21:24:50.666: [0xfa0] UTIL: Found 'textures/barrier_2.png' using default path
+24/05/15 21:24:50.668: [0xfa0] FILE: s3eFileOpen('textures/barrier_2.png', 'rb') succeeded, id=1031 p=0x0f552030
+24/05/15 21:24:50.669: [0xfa0] FILE: s3eFileClose h=0x0f552030
+24/05/15 21:24:50.677: [0xfa0] UTIL: Found 'textures/barrier_3.png' using default path
+24/05/15 21:24:50.679: [0xfa0] FILE: s3eFileOpen('textures/barrier_3.png', 'rb') succeeded, id=1000 p=0x0f54fdcc
+24/05/15 21:24:50.681: [0xfa0] FILE: s3eFileClose h=0x0f54fdcc
+24/05/15 21:24:50.688: [0xfa0] UTIL: Found 'textures/barrier_4.png' using default path
+24/05/15 21:24:50.690: [0xfa0] FILE: s3eFileOpen('textures/barrier_4.png', 'rb') succeeded, id=1001 p=0x0f54fee8
+24/05/15 21:24:50.692: [0xfa0] FILE: s3eFileClose h=0x0f54fee8
+24/05/15 21:24:50.698: [0xfa0] UTIL: Found 'fonts/arial8.gxfont' using default path
+24/05/15 21:24:50.700: [0xfa0] UTIL: Found 'fonts/arial8.gxfont' using default path
+24/05/15 21:24:50.701: [0xfa0] FILE: s3eFileOpen('fonts/arial8.gxfont', 'r') succeeded, id=1002 p=0x0f550004
+24/05/15 21:24:50.704: [0xfa0] UTIL: Found 'fonts/arial8.tga' using default path
+24/05/15 21:24:50.705: [0xfa0] FILE: s3eFileOpen('fonts/arial8.tga', 'rb') succeeded, id=1003 p=0x0f550120
+24/05/15 21:24:50.706: [0xfa0] FILE: s3eFileClose h=0x0f550120
+24/05/15 21:24:50.708: [0xfa0] GX_FONT_VERBOSE: Font build took 6 ms
+24/05/15 21:24:50.709: [0xfa0] FILE: s3eFileClose h=0x0f550004
+24/05/15 21:24:50.710: [0xfa0] UTIL: Found 'data-gles1/fonts/arial8.gxfont.bin' using path global 'data-gles1'
+24/05/15 21:24:50.711: [0xfa0] FILE: s3eFileOpen('data-gles1/fonts/arial8.gxfont.bin', 'wb') succeeded, id=1004 p=0x0f55023c
+24/05/15 21:24:50.714: [0xfa0] FILE: s3eFileClose h=0x0f55023c
+24/05/15 21:24:50.715: [0xfa0] UTIL: Found 'data-gles1/fonts/arial8.gxfont.bin' using path global 'data-gles1'
+24/05/15 21:24:50.716: [0xfa0] FILE: s3eFileOpen('data-gles1/fonts/arial8.gxfont.bin', 'rb') succeeded, id=1005 p=0x0f550358
+24/05/15 21:24:50.718: [0xfa0] FILE: s3eFileClose h=0x0f550358
+24/05/15 21:24:50.720: [0xfa0] UTIL: Found 'textures/ship.png' using default path
+24/05/15 21:24:50.721: [0xfa0] FILE: s3eFileOpen('textures/ship.png', 'rb') succeeded, id=1006 p=0x0f550474
+24/05/15 21:24:50.722: [0xfa0] FILE: s3eFileClose h=0x0f550474
+24/05/15 21:24:50.727: [0xfa0] FILE: s3eFileOpen('textures/barrier.png', 'rb') succeeded, id=1007 p=0x0f550590
+24/05/15 21:24:50.728: [0xfa0] FILE: s3eFileClose h=0x0f550590
+24/05/15 21:24:50.732: [0xfa0] GX_VERBOSE: Generating default shader: #define FRAGMENT 
+#define UV0_STREAM 
+#define TEX0 
+24/05/15 21:24:50.733: [0xfa0] GX_VERBOSE: Generating default shader: #define UV0_STREAM 
+24/05/15 21:24:50.761: [0xfa0] GX_VERBOSE: Generating default shader: #define FRAGMENT 
+#define UV0_STREAM 
+#define COL_STREAM 
+#define TEX0 
+24/05/15 21:24:50.763: [0xfa0] GX_VERBOSE: Generating default shader: #define UV0_STREAM 
+#define COL_STREAM 
+24/05/15 21:24:50.789: [0xfa0] GX_VERBOSE: Generating default shader: #define FRAGMENT 
+#define COL_STREAM 
+24/05/15 21:24:50.791: [0xfa0] GX_VERBOSE: Generating default shader: #define COL_STREAM 
+24/05/15 21:24:56.232: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x76, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:24:56.360: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x76, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:24:57.328: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x76, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:24:57.504: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x76, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:24:58.600: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x76, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:24:58.680: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x76, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:00.756: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x76, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:00.848: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x76, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:08.131: [0xfa0] DEVICE: s3eExecPushNext: NULL [root=NULL 0x00000000 0x00000000]
+24/05/15 21:25:08.132: [0xfa0] DEVICE: s3eExecPushNext: using current executable: c:\Users\Ahmed Saleh\Documents\spaceinvader\build_spaceinvader_vc12\Debug_spaceinvader_VC12_x86\spaceinvader.s86
+24/05/15 21:25:08.132: [0xfa0] DEVICE: s3eExecPushNext: raw://c:\Users\Ahmed Saleh\Documents\spaceinvader\build_spaceinvader_vc12\Debug_spaceinvader_VC12_x86\spaceinvader.s86
+24/05/15 21:25:08.133: [0xfa0] DEVICE: s3eDeviceExit: 0
+24/05/15 21:25:08.134: [0xfa0] THREAD: Exit: retval=0x00000000 all=1
+24/05/15 21:25:08.135: [0xfa0] THREAD: s3eThreadCancelAll
+24/05/15 21:25:08.135: [0xfa0] THREAD: done s3eThreadCancelAll
+24/05/15 21:25:08.135: [0xfa0] THREAD: s3eThreadExit called from main app thread
+24/05/15 21:25:08.135: [0xfa0] FIBRE: s3eFibreExit() 0x00442830
+24/05/15 21:25:08.136: [0xfa0] FIBRE: s3eFibreExit() to 0x0044280c from 0x00442830
+24/05/15 21:25:08.136: [0xfa0] THREAD: s3eThreadCancelAll
+24/05/15 21:25:08.136: [0xfa0] THREAD: done s3eThreadCancelAll
+24/05/15 21:25:08.137: [0xfa0] THREAD: all threads now dead (current=0x00000fa0)
+24/05/15 21:25:08.137: [0xfa0] LOADER: Application has exited, starting cleanup
+24/05/15 21:25:08.138: [0xfa0] LOADER: Done execute S3E 0x00155e20 [rtn=0]
+24/05/15 21:25:08.138: [0xfa0] SOUND: s3eSoundStop: started=0
+24/05/15 21:25:08.139: [0xfa0] LOADER: Unloading S3E 0x00155e20 [c:\Users\Ahmed Saleh\Documents\spaceinvader\build_spaceinvader_vc12\Debug_spaceinvader_VC12_x86\spaceinvader.s86]
+24/05/15 21:25:08.139: [0xfa0] LOADER: deleting DLL: c:\Users\Ahmed Saleh\Documents\spaceinvader\build_spaceinvader_vc12\Debug_spaceinvader_VC12_x86\spaceinvader.s86
+24/05/15 21:25:08.141: [0xfa0] DEVICE: Terminating LICENSE
+24/05/15 21:25:08.143: [0xfa0] DEVICE: Terminating VIDEO
+24/05/15 21:25:08.144: [0xfa0] DEVICE: Terminating AUDIO
+24/05/15 21:25:08.144: [0xfa0] DEVICE: Terminating SOUND
+24/05/15 21:25:08.164: [0xfa0] DEVICE: Terminating POINTER
+24/05/15 21:25:08.164: [0xfa0] DEVICE: Terminating ACCELEROMETER
+24/05/15 21:25:08.165: [0xfa0] DEVICE: Terminating GL
+24/05/15 21:25:08.192: [0xfa0] DEVICE: Terminating VIBRA
+24/05/15 21:25:08.193: [0xfa0] DEVICE: Terminating TIMER
+24/05/15 21:25:08.193: [0xfa0] DEVICE: Terminating STORAGE
+24/05/15 21:25:08.194: [0xfa0] DEVICE: Terminating SOCKET
+24/05/15 21:25:08.195: [0xfa0] DEVICE: Terminating CONFIG
+24/05/15 21:25:08.196: [0xfa0] DEVICE: Terminating ERROR
+24/05/15 21:25:08.196: [0xfa0] DEVICE: Terminating MEMORY
+24/05/15 21:25:08.200: [0xfa0] DEVICE: Terminating CRYPTO
+24/05/15 21:25:08.201: [0xfa0] DEVICE: Terminating EXT
+24/05/15 21:25:08.202: [0xfa0] EXT: terminating extension: s3eWindow
+24/05/15 21:25:08.202: [0xfa0] EXT: terminating extension: s3eThread
+24/05/15 21:25:08.202: [0xfa0] DEVICE: Terminating SURFACE
+24/05/15 21:25:08.207: [0xfa0] DEVICE: Terminating KEYBOARD
+24/05/15 21:25:08.208: [0xfa0] DEVICE: Terminating DEBUG
+-- END TRACE --
+-- START TRACE TO FILE --
+tracing to: ''
+MarmaladeSDK v7.4.3 [415797] (S3E Loader v4.39.0)
+Copyright (C) 2001-2014 Marmalade Technologies Ltd.
+System Info:
+ OS           : WINDOWS (3)
+ OS Version   : Windows 6.1 (6.1)
+ Device ID    : Windows Simulator (0x1)
+ Device Class : WINDOWS_GENERIC (3000)
+ Phone Number : 0044123456789
+ Unique ID    : SIMULATOR_ID
+ Device Name  : My Computer
+ Memory       : 1048576KiB
+24/05/15 21:25:08.227: [0x2b40] DEVICE: Initialising FIBRE
+24/05/15 21:25:08.228: [0x2b40] DEVICE: Initialising THREAD
+24/05/15 21:25:08.228: [0x2b40] THREAD: s3eThreadCreateMain
+24/05/15 21:25:08.229: [0xfa0] DEVICE: Initialising SURFACE
+24/05/15 21:25:08.229: [0xfa0] SURFACE: s3eSurfaceSetup: PixelType=RGB888, pitch=0, ptr=0x00000000, blit=0
+24/05/15 21:25:08.230: [0xfa0] SURFACE: s3eSurfaceSetup: matches native type
+24/05/15 21:25:08.230: [0xfa0] SURFACE: s3eSurfaceSetup: no user surface needed
+24/05/15 21:25:08.231: [0xfa0] SURFACE: done s3eSurfaceInit: 800x600 p:1600 (800x600 p:1600) o:0
+24/05/15 21:25:08.231: [0xfa0] DEVICE: Initialising EXT
+24/05/15 21:25:08.232: [0xfa0] EXT: registering extension: s3eLibrary [0xe6dd6ce5]
+24/05/15 21:25:08.232: [0xfa0] EXT: registering extension: s3eExtLoadLibaray [0xf23d6d85]
+24/05/15 21:25:08.233: [0xfa0] EXT: registering extension: s3eCamera [0xa3e23039]
+24/05/15 21:25:08.235: [0xfa0] EXT: registering extension: s3eWindow [0xd31aa8a8]
+24/05/15 21:25:08.235: [0xfa0] EXT: registering extension: s3eVFS [0x17f48c9f]
+24/05/15 21:25:08.236: [0xfa0] EXT: registering extension: s3eContacts [0x5e39d2af]
+24/05/15 21:25:08.236: [0xfa0] EXT: registering extension: s3eSoundRecord [0x579dbf78]
+24/05/15 21:25:08.237: [0xfa0] EXT: registering extension: s3eTouchpad [0x1dbd7ce8]
+24/05/15 21:25:08.238: [0xfa0] EXT: registering extension: s3eCompass [0x40d632c6]
+24/05/15 21:25:08.238: [0xfa0] EXT: registering extension: Compass [0xd3653f1b]
+24/05/15 21:25:08.239: [0xfa0] EXT: registering extension: s3eDebugHeap [0xc667a795]
+24/05/15 21:25:08.240: [0xfa0] EXT: registering extension: s3eExtDebugHeap [0xff96de46]
+24/05/15 21:25:08.240: [0xfa0] EXT: registering extension: s3eClipboard [0xd68f3420]
+24/05/15 21:25:08.241: [0xfa0] EXT: registering extension: s3eOSExec [0xc121bcf7]
+24/05/15 21:25:08.241: [0xfa0] EXT: registering extension: s3eExtOSExec [0x20380948]
+24/05/15 21:25:08.242: [0xfa0] EXT: registering extension: s3eEval [0x167d1038]
+24/05/15 21:25:08.242: [0xfa0] EXT: registering extension: s3eExtEval [0xf0421449]
+24/05/15 21:25:08.243: [0xfa0] EXT: registering extension: s3eHighResTimer [0x41f2dedb]
+24/05/15 21:25:08.243: [0xfa0] EXT: registering extension: s3eOSReadString [0x9fe3ea45]
+24/05/15 21:25:08.243: [0xfa0] EXT: registering extension: s3eCameraCapture [0xd36aceed]
+24/05/15 21:25:08.244: [0xfa0] EXT: registering extension: s3eTestEmulatorConfig [0x4a0d0a4f]
+24/05/15 21:25:08.244: [0xfa0] EXT: registering extension: s3eThread [0xcc0b4a28]
+24/05/15 21:25:08.245: [0xfa0] EXT: registering extension: s3eSocketOpt [0x09cdcdec]
+24/05/15 21:25:08.245: [0xfa0] EXT: registering extension: s3eExtSocketOpt [0x42fd049d]
+24/05/15 21:25:08.246: [0xfa0] EXT: registering extension: s3eImagePicker [0xd2fc1d51]
+24/05/15 21:25:08.246: [0xfa0] EXT: registering extension: s3eTest [0x168503f0]
+24/05/15 21:25:08.247: [0xfa0] EXT: registering extension: s3eSMS [0x17f480c3]
+24/05/15 21:25:08.247: [0xfa0] EXT: registering extension: s3eMetrics [0x2bc8e047]
+24/05/15 21:25:08.248: [0xfa0] EXT: registering extension: Metrics [0xbe57ec9c]
+24/05/15 21:25:08.249: [0xfa0] EXT: registering extension: s3eLocation [0x91944229]
+24/05/15 21:25:08.249: [0xfa0] EXT: registering extension: Location [0x7604d91e]
+24/05/15 21:25:08.250: [0xfa0] EXT: registering extension: Win32Surface [0x909755c1]
+24/05/15 21:25:08.251: [0xfa0] EXT: registering extension: Win32UIProcessMessage [0x48f2a5ba]
+24/05/15 21:25:08.251: [0xfa0] EXT: registering extension: Win32DataDirChange [0xbfcfc057]
+24/05/15 21:25:08.252: [0xfa0] DEVICE: Initialising CONFIG
+24/05/15 21:25:08.252: [0xfa0] DEVICE: Initialising TIMER
+24/05/15 21:25:08.253: [0xfa0] DEVICE: Initialising COMPRESSION
+24/05/15 21:25:08.253: [0xfa0] DEVICE: DeviceInit done: services=0x0a216148
+24/05/15 21:25:08.253: [0xfa0] EXT: s3eExtGetHash: 0xd31aa8a8 [0x00000000 size=0]
+24/05/15 21:25:08.254: [0xfa0] EXT: initializing extension: s3eWindow
+24/05/15 21:25:08.254: [0xfa0] EXT: initializing extension: s3eWindow 0x0f48c2a0
+24/05/15 21:25:08.255: [0xfa0] DEVICE: SetupPaths: 
+24/05/15 21:25:08.255: [0xfa0] LOADER: ParseCommandLineData [-via:"c:\Users\Ahmed Saleh\Documents\spaceinvader\build_spaceinvader_vc12\spaceinvader_vc12_debug.via"]
+24/05/15 21:25:08.256: [0xfa0] LOADER: setting [commandline]  via=c:\Users\Ahmed Saleh\Documents\spaceinvader\build_spaceinvader_vc12\spaceinvader_vc12_debug.via
+24/05/15 21:25:08.256: [0xfa0] LOADER: parsing via file: c:\Users\Ahmed Saleh\Documents\spaceinvader\build_spaceinvader_vc12\spaceinvader_vc12_debug.via
+24/05/15 21:25:08.257: [0xfa0] FILE: s3eFileOpen('c:\Users\Ahmed Saleh\Documents\spaceinvader\build_spaceinvader_vc12\spaceinvader_vc12_debug.via', 'r') succeeded, id=257222392 p=0x0f54e6f8
+24/05/15 21:25:08.257: [0xfa0] LOADER: reading 1081 bytes from via files
+24/05/15 21:25:08.258: [0xfa0] FILE: s3eFileClose h=0x0f54e6f8
+24/05/15 21:25:08.258: [0xfa0] LOADER: ParseCommandLineData [-via:"c:\Users\Ahmed Saleh\Documents\spaceinvader\build_spaceinvader_vc12\spaceinvader_vc12_debug.via" --dll="c:\Users\Ahmed Saleh\Documents\spaceinvader\build_spaceinvader_vc12\Debug_spaceinva
+24/05/15 21:25:08.259: [0xfa0] LOADER: setting [commandline]  via=c:\Users\Ahmed Saleh\Documents\spaceinvader\build_spaceinvader_vc12\spaceinvader_vc12_debug.via
+24/05/15 21:25:08.259: [0xfa0] LOADER: setting [commandline]  dll=c:\Users\Ahmed Saleh\Documents\spaceinvader\build_spaceinvader_vc12\Debug_spaceinvader_VC12_x86\spaceinvader.s86
+24/05/15 21:25:08.260: [0xfa0] LOADER: setting [commandline]  data=c:\Users\Ahmed Saleh\Documents\spaceinvader\data
+24/05/15 21:25:08.261: [0xfa0] LOADER: setting [commandline]  checks3edir=1
+24/05/15 21:25:08.261: [0xfa0] LOADER: setting [commandline]  app-icf1=c:/Users/Ahmed Saleh/Documents/spaceinvader/data/app.icf
+24/05/15 21:25:08.262: [0xfa0] LOADER: setting [commandline]  win32-ext-dll1=c:/marmalade/7.4/extensions/pvrtextool/lib/win32/PVRTexTool.dll
+24/05/15 21:25:08.262: [0xfa0] LOADER: setting [commandline]  config-txt1=c:/Users/Ahmed Saleh/Documents/spaceinvader/data/app.config.txt
+24/05/15 21:25:08.263: [0xfa0] LOADER: setting [commandline]  config-txt2=c:/marmalade/7.4/modules/iw2d/docs/iw2d.config.txt
+24/05/15 21:25:08.263: [0xfa0] LOADER: setting [commandline]  config-txt3=c:/marmalade/7.4/modules/iwgeom/docs/iwgeom.config.txt
+24/05/15 21:25:08.264: [0xfa0] LOADER: setting [commandline]  config-txt4=c:/marmalade/7.4/modules/iwgl/docs/iwgl.config.txt
+24/05/15 21:25:08.264: [0xfa0] LOADER: setting [commandline]  config-txt5=c:/marmalade/7.4/modules/iwgx/docs/iwgx.config.txt
+24/05/15 21:25:08.266: [0xfa0] LOADER: setting [commandline]  config-txt6=c:/marmalade/7.4/modules/iwgxfont/docs/iwgxfont.config.txt
+24/05/15 21:25:08.266: [0xfa0] LOADER: setting [commandline]  config-txt7=c:/marmalade/7.4/modules/iwresmanager/docs/iwresmanager.config.txt
+24/05/15 21:25:08.267: [0xfa0] LOADER: setting [commandline]  config-txt8=c:/marmalade/7.4/modules/iwutil/docs/iwutil.config.txt
+24/05/15 21:25:08.267: [0xfa0] LOADER: setting [commandline]  config-txt9=c:/marmalade/7.4/s3e/s3e.config.txt
+24/05/15 21:25:08.268: [0xfa0] LOADER: setting [commandline]  config-txt10=c:/marmalade/7.4/s3e\s3e.config.txt
+24/05/15 21:25:08.268: [0xfa0] LOADER: setting [commandline]  s3e-dir=c:/marmalade/7.4/s3e
+24/05/15 21:25:08.269: [0xfa0] FILE: new filesystem: drive=0 type=0 ro=1 name=rom://
+24/05/15 21:25:08.269: [0xfa0] FILE: fs[00]: system[rom://] 'c:\Users\Ahmed Saleh\Documents\spaceinvader\data'
+24/05/15 21:25:08.270: [0xfa0] FILE: fs[03]: system[raw://] ''
+24/05/15 21:25:08.270: [0xfa0] FILE: listed 2 active filesystems
+24/05/15 21:25:08.271: [0xfa0] FILE: new filesystem: drive=1 type=0 ro=0 name=ram://
+24/05/15 21:25:08.271: [0xfa0] FILE: fs[00]: system[rom://] 'c:\Users\Ahmed Saleh\Documents\spaceinvader\data'
+24/05/15 21:25:08.271: [0xfa0] FILE: fs[01]: system[ram://] 'c:\Users\Ahmed Saleh\Documents\spaceinvader\data-ram'
+24/05/15 21:25:08.272: [0xfa0] FILE: fs[03]: system[raw://] ''
+24/05/15 21:25:08.272: [0xfa0] FILE: listed 3 active filesystems
+24/05/15 21:25:08.276: [0xfa0] FILE: new filesystem: drive=0 type=0 ro=1 name=rom://
+24/05/15 21:25:08.277: [0xfa0] FILE: new filesystem: drive=1 type=0 ro=0 name=ram://
+24/05/15 21:25:08.277: [0xfa0] LOADER: Using data directory c:\Users\Ahmed Saleh\Documents\spaceinvader\data as ROM drive
+24/05/15 21:25:08.278: [0xfa0] LOADER: Using directory c:\Users\Ahmed Saleh\Documents\spaceinvader\data-ram as RAM drive
+24/05/15 21:25:08.278: [0xfa0] FILE: s3eFileOpen('raw://c:/Users/Ahmed Saleh/Documents/spaceinvader/data/app.config.txt', 'r') succeeded, id=1000 p=0x0f54fdcc
+24/05/15 21:25:08.278: [0xfa0] FILE: s3eFileClose h=0x0f54fdcc
+24/05/15 21:25:08.279: [0xfa0] FILE: s3eFileOpen('raw://c:/marmalade/7.4/modules/iw2d/docs/iw2d.config.txt', 'r') succeeded, id=1001 p=0x0f54fee8
+24/05/15 21:25:08.280: [0xfa0] FILE: s3eFileClose h=0x0f54fee8
+24/05/15 21:25:08.280: [0xfa0] FILE: s3eFileOpen('raw://c:/marmalade/7.4/modules/iwgeom/docs/iwgeom.config.txt', 'r') succeeded, id=1002 p=0x0f550004
+24/05/15 21:25:08.281: [0xfa0] FILE: s3eFileClose h=0x0f550004
+24/05/15 21:25:08.281: [0xfa0] FILE: s3eFileOpen('raw://c:/marmalade/7.4/modules/iwgl/docs/iwgl.config.txt', 'r') succeeded, id=1003 p=0x0f550120
+24/05/15 21:25:08.282: [0xfa0] FILE: s3eFileClose h=0x0f550120
+24/05/15 21:25:08.282: [0xfa0] FILE: s3eFileOpen('raw://c:/marmalade/7.4/modules/iwgx/docs/iwgx.config.txt', 'r') succeeded, id=1004 p=0x0f55023c
+24/05/15 21:25:08.283: [0xfa0] FILE: s3eFileClose h=0x0f55023c
+24/05/15 21:25:08.284: [0xfa0] FILE: s3eFileOpen('raw://c:/marmalade/7.4/modules/iwgxfont/docs/iwgxfont.config.txt', 'r') succeeded, id=1005 p=0x0f550358
+24/05/15 21:25:08.284: [0xfa0] FILE: s3eFileClose h=0x0f550358
+24/05/15 21:25:08.285: [0xfa0] FILE: s3eFileOpen('raw://c:/marmalade/7.4/modules/iwresmanager/docs/iwresmanager.config.txt', 'r') succeeded, id=1006 p=0x0f550474
+24/05/15 21:25:08.285: [0xfa0] FILE: s3eFileClose h=0x0f550474
+24/05/15 21:25:08.286: [0xfa0] FILE: s3eFileOpen('raw://c:/marmalade/7.4/modules/iwutil/docs/iwutil.config.txt', 'r') succeeded, id=1007 p=0x0f550590
+24/05/15 21:25:08.286: [0xfa0] FILE: s3eFileClose h=0x0f550590
+24/05/15 21:25:08.286: [0xfa0] FILE: s3eFileOpen('raw://c:/marmalade/7.4/s3e/s3e.config.txt', 'r') succeeded, id=1008 p=0x0f5506ac
+24/05/15 21:25:08.291: [0xfa0] FILE: s3eFileClose h=0x0f5506ac
+24/05/15 21:25:08.291: [0xfa0] FILE: s3eFileOpen('raw://c:/marmalade/7.4/s3e\s3e.config.txt', 'r') succeeded, id=1009 p=0x0f5507c8
+24/05/15 21:25:08.296: [0xfa0] FILE: s3eFileClose h=0x0f5507c8
+24/05/15 21:25:08.297: [0xfa0] LOADER: returning pre/post config: 0x00000000 0x00000000
+24/05/15 21:25:08.298: [0xfa0] FILE: s3eFileOpen('raw://c:\marmalade\7.4\s3e/s3e.icf', 'rb') succeeded, id=1010 p=0x0f5508e4
+24/05/15 21:25:08.298: [0xfa0] LOADER: Loading config from: c:\marmalade\7.4\s3e/s3e.icf
+24/05/15 21:25:08.299: [0xfa0] FILE: s3eFileClose h=0x0f5508e4
+24/05/15 21:25:08.299: [0xfa0] LOADER: Loading app-icf from command line specified location c:/Users/Ahmed Saleh/Documents/spaceinvader/data/app.icf
+24/05/15 21:25:08.300: [0xfa0] FILE: s3eFileOpen('raw://c:/Users/Ahmed Saleh/Documents/spaceinvader/data/app.icf', 'rb') succeeded, id=1011 p=0x0f550a00
+24/05/15 21:25:08.300: [0xfa0] LOADER: Loading config from: raw://c:/Users/Ahmed Saleh/Documents/spaceinvader/data/app.icf
+24/05/15 21:25:08.301: [0xfa0] FILE: s3eFileClose h=0x0f550a00
+24/05/15 21:25:08.302: [0xfa0] LOADER: ParseCommandLineData [-via:"c:\Users\Ahmed Saleh\Documents\spaceinvader\build_spaceinvader_vc12\spaceinvader_vc12_debug.via"]
+24/05/15 21:25:08.302: [0xfa0] LOADER: setting [commandline]  via=c:\Users\Ahmed Saleh\Documents\spaceinvader\build_spaceinvader_vc12\spaceinvader_vc12_debug.via
+24/05/15 21:25:08.302: [0xfa0] LOADER: parsing via file: c:\Users\Ahmed Saleh\Documents\spaceinvader\build_spaceinvader_vc12\spaceinvader_vc12_debug.via
+24/05/15 21:25:08.303: [0xfa0] FILE: s3eFileOpen('c:\Users\Ahmed Saleh\Documents\spaceinvader\build_spaceinvader_vc12\spaceinvader_vc12_debug.via', 'r') succeeded, id=1012 p=0x0f550b1c
+24/05/15 21:25:08.303: [0xfa0] LOADER: reading 1081 bytes from via files
+24/05/15 21:25:08.303: [0xfa0] FILE: s3eFileClose h=0x0f550b1c
+24/05/15 21:25:08.304: [0xfa0] LOADER: ParseCommandLineData [-via:"c:\Users\Ahmed Saleh\Documents\spaceinvader\build_spaceinvader_vc12\spaceinvader_vc12_debug.via" --dll="c:\Users\Ahmed Saleh\Documents\spaceinvader\build_spaceinvader_vc12\Debug_spaceinva
+24/05/15 21:25:08.304: [0xfa0] LOADER: setting [commandline]  via=c:\Users\Ahmed Saleh\Documents\spaceinvader\build_spaceinvader_vc12\spaceinvader_vc12_debug.via
+24/05/15 21:25:08.304: [0xfa0] LOADER: setting [commandline]  dll=c:\Users\Ahmed Saleh\Documents\spaceinvader\build_spaceinvader_vc12\Debug_spaceinvader_VC12_x86\spaceinvader.s86
+24/05/15 21:25:08.304: [0xfa0] LOADER: setting [commandline]  data=c:\Users\Ahmed Saleh\Documents\spaceinvader\data
+24/05/15 21:25:08.305: [0xfa0] LOADER: setting [commandline]  checks3edir=1
+24/05/15 21:25:08.305: [0xfa0] LOADER: setting [commandline]  app-icf1=c:/Users/Ahmed Saleh/Documents/spaceinvader/data/app.icf
+24/05/15 21:25:08.305: [0xfa0] LOADER: setting [commandline]  win32-ext-dll1=c:/marmalade/7.4/extensions/pvrtextool/lib/win32/PVRTexTool.dll
+24/05/15 21:25:08.306: [0xfa0] LOADER: setting [commandline]  config-txt1=c:/Users/Ahmed Saleh/Documents/spaceinvader/data/app.config.txt
+24/05/15 21:25:08.306: [0xfa0] LOADER: setting [commandline]  config-txt2=c:/marmalade/7.4/modules/iw2d/docs/iw2d.config.txt
+24/05/15 21:25:08.306: [0xfa0] LOADER: setting [commandline]  config-txt3=c:/marmalade/7.4/modules/iwgeom/docs/iwgeom.config.txt
+24/05/15 21:25:08.306: [0xfa0] LOADER: setting [commandline]  config-txt4=c:/marmalade/7.4/modules/iwgl/docs/iwgl.config.txt
+24/05/15 21:25:08.307: [0xfa0] LOADER: setting [commandline]  config-txt5=c:/marmalade/7.4/modules/iwgx/docs/iwgx.config.txt
+24/05/15 21:25:08.307: [0xfa0] LOADER: setting [commandline]  config-txt6=c:/marmalade/7.4/modules/iwgxfont/docs/iwgxfont.config.txt
+24/05/15 21:25:08.307: [0xfa0] LOADER: setting [commandline]  config-txt7=c:/marmalade/7.4/modules/iwresmanager/docs/iwresmanager.config.txt
+24/05/15 21:25:08.308: [0xfa0] LOADER: setting [commandline]  config-txt8=c:/marmalade/7.4/modules/iwutil/docs/iwutil.config.txt
+24/05/15 21:25:08.308: [0xfa0] LOADER: setting [commandline]  config-txt9=c:/marmalade/7.4/s3e/s3e.config.txt
+24/05/15 21:25:08.308: [0xfa0] LOADER: setting [commandline]  config-txt10=c:/marmalade/7.4/s3e\s3e.config.txt
+24/05/15 21:25:08.309: [0xfa0] LOADER: setting [commandline]  s3e-dir=c:/marmalade/7.4/s3e
+24/05/15 21:25:08.309: [0xfa0] LOADER: s3eExecMemoryCheck: Memory free: 1048576K
+24/05/15 21:25:08.310: [0xfa0] FILE: s3eFileOpen('raw://C:\Users\AHMEDS~1\AppData\Local\Temp\\_marm_temp_test_', 'w') succeeded, id=1013 p=0x0f550c38
+24/05/15 21:25:08.311: [0xfa0] FILE: s3eFileClose h=0x0f550c38
+24/05/15 21:25:08.311: [0xfa0] FILE: new filesystem: drive=4 type=0 ro=0 name=tmp://
+24/05/15 21:25:08.312: [0xfa0] FILE: fs[00]: system[rom://] 'c:\Users\Ahmed Saleh\Documents\spaceinvader\data'
+24/05/15 21:25:08.312: [0xfa0] FILE: fs[01]: system[ram://] 'c:\Users\Ahmed Saleh\Documents\spaceinvader\data-ram'
+24/05/15 21:25:08.313: [0xfa0] FILE: fs[03]: system[raw://] ''
+24/05/15 21:25:08.313: [0xfa0] FILE: fs[04]: system[tmp://] 'C:\Users\AHMEDS~1\AppData\Local\Temp\'
+24/05/15 21:25:08.314: [0xfa0] FILE: listed 4 active filesystems
+24/05/15 21:25:08.386: [0xfa0] SURFACE: Fixed Screen Orientation: FixedPortrait
+24/05/15 21:25:08.386: [0xfa0] SURFACE: scaling=1
+24/05/15 21:25:08.415: [0xfa0] SURFACE: s3eSurfaceSetup: PixelType=RGB888, pitch=0, ptr=0x00000000, blit=0
+24/05/15 21:25:08.415: [0xfa0] SURFACE: s3eSurfaceSetup: does not match native type (requested=RGB888 native=RGB565)
+24/05/15 21:25:09.139: [0xfa0] EXT: Registering user-supplied extensions
+24/05/15 21:25:09.140: [0xfa0] EXT: Loading extension dll c:/marmalade/7.4/extensions/pvrtextool/lib/win32/PVRTexTool_d.dll
+24/05/15 21:25:09.141: [0xfa0] LOADER: GL not present, resolving all GL symbols to unavailable
+24/05/15 21:25:09.145: [0xfa0] EXT: registering extension: PVRTexTool [0xb6b3ceac]
+24/05/15 21:25:09.146: [0xfa0] FIBRE: stack switch : enabled
+24/05/15 21:25:09.146: [0xfa0] FIBRE: fast switch  : disabled
+24/05/15 21:25:09.147: [0xfa0] FIBRE: global lock  : enabled
+24/05/15 21:25:09.147: [0xfa0] FIBRE: fast lock    : disabled
+24/05/15 21:25:09.147: [0xfa0] FIBRE: thunks       : enabled
+24/05/15 21:25:09.148: [0xfa0] LOADER: Calling s3eDeviceInit()
+24/05/15 21:25:09.148: [0xfa0] DEVICE: DeviceInit: services=0xfffdffff [0xe5dc9eb7]
+24/05/15 21:25:09.149: [0xfa0] DEVICE: Initialising CALLBACKS
+24/05/15 21:25:09.149: [0xfa0] DEVICE: Initialising CRYPTO
+24/05/15 21:25:09.149: [0xfa0] DEVICE: Initialising ERROR
+24/05/15 21:25:09.150: [0xfa0] DEVICE: Initialising SOCKET
+24/05/15 21:25:09.152: [0xfa0] DEVICE: Initialising STORAGE
+24/05/15 21:25:09.153: [0xfa0] DEVICE: Initialising VIBRA
+24/05/15 21:25:09.153: [0xfa0] DEVICE: Initialising KEYBOARD
+24/05/15 21:25:09.154: [0xfa0] DEVICE: Initialising POINTER
+24/05/15 21:25:09.154: [0xfa0] DEVICE: Initialising ACCELEROMETER
+24/05/15 21:25:09.155: [0xfa0] ACCELEROMETER: damping=0 scaling=0
+24/05/15 21:25:09.155: [0xfa0] DEVICE: Initialising SOUND
+24/05/15 21:25:09.198: [0xfa0] SOUND: stereo sound enabled
+24/05/15 21:25:09.199: [0xfa0] SOUND: s3eSoundStop: started=0
+24/05/15 21:25:09.200: [0xfa0] SOUND: SetMasterVolume: 255 -> 256
+24/05/15 21:25:09.201: [0xfa0] DEVICE: Initialising AUDIO
+24/05/15 21:25:09.201: [0xfa0] AUDIO: Number of channels = 16
+24/05/15 21:25:09.202: [0xfa0] DEVICE: Initialising VIDEO
+24/05/15 21:25:09.203: [0xfa0] DEVICE: Initialising LICENSE
+24/05/15 21:25:09.203: [0xfa0] DEVICE: Initialising GL
+24/05/15 21:25:09.204: [0xfa0] DEVICE: DeviceInit done: services=0xfffdffff
+24/05/15 21:25:09.215: [0xfa0] LOADER: s3eExecInit Done
+24/05/15 21:25:09.251: [0xfa0] LICENSE: LicenseType: ret true : output=Free
+24/05/15 21:25:09.256: [0xfa0] LOADER: AppVersion: 4 39
+24/05/15 21:25:09.257: [0xfa0] LOADER: S3E Version    : 4.39.0
+24/05/15 21:25:09.258: [0xfa0] LOADER: Arch           : X86
+24/05/15 21:25:09.259: [0xfa0] LOADER: VFP            : 1
+24/05/15 21:25:09.259: [0xfa0] LOADER: App S3E Version: 4.39.0
+24/05/15 21:25:09.260: [0xfa0] LOADER: App arch       : X86
+24/05/15 21:25:09.261: [0xfa0] LOADER: App VFP        : 0
+24/05/15 21:25:09.261: [0xfa0] LOADER: new s3eExecHandle = 0x00155c78
+24/05/15 21:25:09.272: [0xfa0] SURFACE: s3eSurfaceSetup: PixelType=RGB565, pitch=0, ptr=0x00000000, blit=0
+24/05/15 21:25:09.278: [0xfa0] SURFACE: s3eSurfaceSetup: matches native type
+24/05/15 21:25:09.279: [0xfa0] SURFACE: s3eSurfaceSetup: no user surface needed
+24/05/15 21:25:09.279: [0xfa0] LOADER: Calling s3eDeviceInit(S3E_DEVICE_INIT_MEMORY)
+24/05/15 21:25:09.280: [0xfa0] DEVICE: DeviceInit: services=0x00020000 [0x00020000]
+24/05/15 21:25:09.281: [0xfa0] DEVICE: Initialising MEMORY
+24/05/15 21:25:09.281: [0xfa0] MEMORY: Loader heap size=30000
+24/05/15 21:25:09.298: [0xfa0] MEMORY: Initialised heap 0 [0x10221be4-0x131d0c64] size=50000000
+24/05/15 21:25:09.299: [0xfa0] MEMORY: Initialised heap 7 [0x00d91464-0x00d9dc64] size=51200
+24/05/15 21:25:09.299: [0xfa0] MEMORY: s3eMemorySetUserMemMgr 0x00191d80 0x00191fc0 0x00191a98
+24/05/15 21:25:09.300: [0xfa0] DEVICE: DeviceInit done: services=0x00020000
+24/05/15 21:25:09.300: [0xfa0] LOADER: IwS3EGetEntryPoint -> 0x09bf09b0
+24/05/15 21:25:09.301: [0xfa0] LOADER: Executing S3E 0x00155c78 [c:\Users\Ahmed Saleh\Documents\spaceinvader\build_spaceinvader_vc12\Debug_spaceinvader_VC12_x86\spaceinvader.s86] entry=0x09bf09b0
+24/05/15 21:25:09.302: [0xfa0] EXT: s3eExtGetHash: 0xcc0b4a28 [0x0aa65f48 size=76]
+24/05/15 21:25:09.302: [0xfa0] EXT: initializing extension: s3eThread
+24/05/15 21:25:09.303: [0xfa0] EXT: initializing extension: s3eThread 0x0f468120
+24/05/15 21:25:09.303: [0xfa0] MEMORY: s3eMemorySetUserMemMgr 0x09ba9570 0x09ba9590 0x09ba9580
+24/05/15 21:25:09.304: [0xfa0] GX_VERBOSE: IwGxInitBase()
+24/05/15 21:25:09.305: [0xfa0] EXT: s3eExtGetHash: 0x2bc8e047 [0x0aa65d60 size=72]
+24/05/15 21:25:09.305: [0xfa0] EXT: initializing extension: s3eMetrics
+24/05/15 21:25:09.306: [0xfa0] EXT: s3eExtGetHash: 0xc667a795 [0x0aa65db0 size=8]
+24/05/15 21:25:09.306: [0xfa0] EXT: initializing extension: s3eDebugHeap
+24/05/15 21:25:09.306: [0xfa0] MEMORY: s3eExtDebugHeapAlloc: 5242880 bytes allocated for system debug heap
+24/05/15 21:25:09.311: [0xfa0] UTIL: IwCallStackInit
+24/05/15 21:25:09.312: [0xfa0] GX_VERBOSE: Registering for S3E_SURFACE_SCREENSIZE callback
+24/05/15 21:25:09.312: [0xfa0] SURFACE: s3eSurfaceSetup: PixelType=RGB565, pitch=0, ptr=0x00000000, blit=4
+24/05/15 21:25:09.313: [0xfa0] SURFACE: s3eSurfaceSetup: matches native type
+24/05/15 21:25:09.313: [0xfa0] SURFACE: s3eSurfaceSetup: no user surface needed
+24/05/15 21:25:09.314: [0xfa0] GX: IwGxSetScreenOrient: 0
+24/05/15 21:25:09.325: [0xfa0] IW_GL: EGL: eglGetDisplay returned 07883A70
+24/05/15 21:25:09.358: [0xfa0] IW_GL: eglInitialise succeeded - version 1.4
+24/05/15 21:25:09.359: [0xfa0] IW_GL: S3E_EGL_VERSION: 0104
+24/05/15 21:25:09.359: [0xfa0] IW_GL: S3E_GL_VERSION: 0200
+24/05/15 21:25:09.360: [0xfa0] IW_GL: EGL_VENDOR: Google Inc.
+24/05/15 21:25:09.360: [0xfa0] IW_GL: EGL_VERSION: 1.4 (ANGLE 1.0.0.1275)
+24/05/15 21:25:09.361: [0xfa0] IW_GL:     EGL_EXT_create_context_robustness
+24/05/15 21:25:09.361: [0xfa0] IW_GL:     EGL_ANGLE_d3d_share_handle_client_buffer
+24/05/15 21:25:09.362: [0xfa0] IW_GL:     EGL_ANGLE_query_surface_pointer
+24/05/15 21:25:09.362: [0xfa0] IW_GL:     EGL_ANGLE_surface_d3d_texture_2d_share_handle
+24/05/15 21:25:09.363: [0xfa0] IW_GL:     EGL_NV_post_sub_buffer
+24/05/15 21:25:09.363: [0xfa0] GL_CORE: rejecting config 0: EGL_DEPTH_SIZE < 16
+24/05/15 21:25:09.364: [0xfa0] GL_CORE: rejecting config 4: EGL_CONFIG_CAVEAT == EGL_SLOW_CONFIG
+24/05/15 21:25:09.364: [0xfa0] GL_CORE: rejecting config 5: EGL_CONFIG_CAVEAT == EGL_SLOW_CONFIG
+24/05/15 21:25:09.365: [0xfa0] GL_CORE: rejecting config 6: EGL_CONFIG_CAVEAT == EGL_SLOW_CONFIG
+24/05/15 21:25:09.366: [0xfa0] GL_CORE: rejecting config 7: EGL_CONFIG_CAVEAT == EGL_SLOW_CONFIG
+24/05/15 21:25:09.366: [0xfa0] GL_CORE: rejecting config 8: EGL_CONFIG_CAVEAT == EGL_SLOW_CONFIG
+24/05/15 21:25:09.367: [0xfa0] GL_CORE: rejecting config 9: EGL_CONFIG_CAVEAT == EGL_SLOW_CONFIG
+24/05/15 21:25:09.367: [0xfa0] GL_CORE: rejecting config 10: EGL_CONFIG_CAVEAT == EGL_SLOW_CONFIG
+24/05/15 21:25:09.368: [0xfa0] GL_CORE: rejecting config 11: EGL_CONFIG_CAVEAT == EGL_SLOW_CONFIG
+24/05/15 21:25:09.368: [0xfa0] GL_CORE: EGL: Chose EGL_CONFIG_ID 3
+24/05/15 21:25:09.392: [0xfa0] IW_GL: GL_VENDOR: Google Inc.
+24/05/15 21:25:09.392: [0xfa0] IW_GL: GL_RENDERER: ANGLE (NVIDIA GeForce 840M      )
+24/05/15 21:25:09.393: [0xfa0] IW_GL: GL_VERSION: OpenGL ES 2.0 (ANGLE 1.0.0.1275)
+24/05/15 21:25:09.393: [0xfa0] IW_GL: GL properties reported by driver:
+24/05/15 21:25:09.394: [0xfa0] IW_GL:     GL_MAX_COMBINED_TEXTURE_IMAGE_UNITS: 20
+24/05/15 21:25:09.394: [0xfa0] IW_GL:     GL_SHADER_COMPILER: 1
+24/05/15 21:25:09.395: [0xfa0] IW_GL:     GL_MAX_VERTEX_ATTRIBS: 16
+24/05/15 21:25:09.396: [0xfa0] IW_GL:     GL_MAX_VERTEX_UNIFORM_VECTORS: 254
+24/05/15 21:25:09.396: [0xfa0] IW_GL:     GL_MAX_VARYING_VECTORS: 10
+24/05/15 21:25:09.397: [0xfa0] IW_GL:     GL_MAX_TEXTURE_IMAGE_UNITS: 16
+24/05/15 21:25:09.397: [0xfa0] IW_GL:     GL_MAX_VERTEX_TEXTURE_IMAGE_UNITS: 4
+24/05/15 21:25:09.398: [0xfa0] IW_GL:     GL_MAX_FRAGMENT_UNIFORM_VECTORS: 221
+24/05/15 21:25:09.398: [0xfa0] IW_GL:     GL_MAX_CUBE_MAP_TEXTURE_SIZE: 16384
+24/05/15 21:25:09.399: [0xfa0] IW_GL:     GL_IMPLEMENTATION_COLOR_READ_FORMAT: GL_RGB
+24/05/15 21:25:09.399: [0xfa0] IW_GL:     GL_IMPLEMENTATION_COLOR_READ_TYPE: GL_UNSIGNED_SHORT_5_6_5
+24/05/15 21:25:09.400: [0xfa0] IW_GL:     GL_MAX_RENDERBUFFER_SIZE: 16384
+24/05/15 21:25:09.400: [0xfa0] IW_GL:     GL_POINT_SIZE_MAX: -1
+24/05/15 21:25:09.401: [0xfa0] IW_GL:     GL_MAX_TEXTURE_SIZE: 16384
+24/05/15 21:25:09.401: [0xfa0] IW_GL:     GL_MAX_VIEWPORT_DIMS: (16384, 16384)
+24/05/15 21:25:09.402: [0xfa0] IW_GL: Supported GL_EXTENSIONS:
+24/05/15 21:25:09.402: [0xfa0] IW_GL:     GL_OES_packed_depth_stencil
+24/05/15 21:25:09.403: [0xfa0] IW_GL:     GL_OES_element_index_uint
+24/05/15 21:25:09.403: [0xfa0] IW_GL:     GL_OES_texture_half_float_linear
+24/05/15 21:25:09.404: [0xfa0] IW_GL:     GL_NV_fence
+24/05/15 21:25:09.404: [0xfa0] IW_GL:     GL_EXT_read_format_bgra
+24/05/15 21:25:09.405: [0xfa0] IW_GL:     GL_OES_get_program_binary
+24/05/15 21:25:09.405: [0xfa0] IW_GL:     GL_OES_rgb8_rgba8
+24/05/15 21:25:09.406: [0xfa0] IW_GL:     GL_EXT_texture_compression_dxt1
+24/05/15 21:25:09.407: [0xfa0] IW_GL:     GL_ANGLE_texture_compression_dxt3
+24/05/15 21:25:09.407: [0xfa0] IW_GL:     GL_ANGLE_texture_compression_dxt5
+24/05/15 21:25:09.407: [0xfa0] IW_GL:     GL_ARB_texture_env_combine
+24/05/15 21:25:09.408: [0xfa0] IW_GL:     GL_OES_texture_npot
+24/05/15 21:25:09.408: [0xfa0] IW_GL:     GL_EXT_texture_format_BGRA8888
+24/05/15 21:25:09.409: [0xfa0] IW_GL:     GL_OES_texture_half_float
+24/05/15 21:25:09.409: [0xfa0] IW_GL:     GL_ANGLE_framebuffer_multisample
+24/05/15 21:25:09.410: [0xfa0] IW_GL:     GL_ANGLE_framebuffer_blit
+24/05/15 21:25:09.410: [0xfa0] IW_GL:     GL_OES_standard_derivatives
+24/05/15 21:25:09.411: [0xfa0] IW_GL:     GL_OES_texture_float
+24/05/15 21:25:09.411: [0xfa0] IW_GL:     GL_OES_texture_float_linear
+24/05/15 21:25:09.411: [0xfa0] IW_GL:     GL_EXT_texture_filter_anisotropic
+24/05/15 21:25:09.412: [0xfa0] IW_GL:     GL_ANGLE_depth_texture
+24/05/15 21:25:09.412: [0xfa0] SURFACE: s3eSurfaceSetup: PixelType=RGB565, pitch=0, ptr=0x00000000, blit=4
+24/05/15 21:25:09.413: [0xfa0] SURFACE: s3eSurfaceSetup: matches native type
+24/05/15 21:25:09.413: [0xfa0] SURFACE: s3eSurfaceSetup: no user surface needed
+24/05/15 21:25:09.440: [0xfa0] GX: Parsing GL driver strings
+24/05/15 21:25:09.440: [0xfa0] GX_VERBOSE: Hardware capabilities:
+24/05/15 21:25:09.441: [0xfa0] FILE: s3eFileOpen('resource_cache/cachedSize.bin', 'rb') succeeded, id=1014 p=0x0f550d54
+24/05/15 21:25:09.442: [0xfa0] FILE: s3eFileClose h=0x0f550d54
+24/05/15 21:25:09.442: [0xfa0] UTIL: Added class factory for CIwGxShaderTechnique (hash 0x62ab11c4)
+24/05/15 21:25:09.443: [0xfa0] UTIL: Added class factory for CIwGxCubeMap (hash 0x5474a064)
+24/05/15 21:25:09.443: [0xfa0] GX_VERBOSE: IwGxInit() end
+24/05/15 21:25:09.444: [0xfa0] GX_VERBOSE: _IwGxInitGL()
+24/05/15 21:25:09.444: [0xfa0] GX_VERBOSE: Reported: Max texture stages 20. Max dimensions 16384x16384
+24/05/15 21:25:09.445: [0xfa0] GX_VERBOSE: Default framebuffer binding is 0
+24/05/15 21:25:09.446: [0xfa0] GX_VERBOSE: _IwGxInitGL() end
+24/05/15 21:25:09.446: [0xfa0] UTIL: Added class factory for CIwResTemplateImage (hash 0x4d5ab6b1)
+24/05/15 21:25:09.447: [0xfa0] UTIL: Added class factory for CIwResTemplateMTL (hash 0x3a22b5bb)
+24/05/15 21:25:09.447: [0xfa0] UTIL: Added class factory for CIwResTemplateGROUP (hash 0x4d3980fb)
+24/05/15 21:25:09.448: [0xfa0] UTIL: Added class factory for CIwMaterial (hash 0x2544f997)
+24/05/15 21:25:09.448: [0xfa0] UTIL: Added class factory for CIwResGroup (hash 0xf446397f)
+24/05/15 21:25:09.448: [0xfa0] UTIL: Added class factory for CIwTexture (hash 0x3521f539)
+24/05/15 21:25:09.449: [0xfa0] UTIL: Added class factory for CIwResBuildStyle (hash 0xa59f2593)
+24/05/15 21:25:09.449: [0xfa0] RESMANAGER: Added serialise block for ResGroupMembers
+24/05/15 21:25:09.450: [0xfa0] RESMANAGER: Added serialise block for ResGroupBuildData
+24/05/15 21:25:09.450: [0xfa0] RESMANAGER: Added serialise block for ResGroupChildPaths
+24/05/15 21:25:09.451: [0xfa0] RESMANAGER: Added serialise block for ResGroupHST
+24/05/15 21:25:09.451: [0xfa0] RESMANAGER: Added serialise block for ResGroupDirectory
+24/05/15 21:25:09.452: [0xfa0] RESMANAGER: Added serialise block for ResGroupResources
+24/05/15 21:25:09.452: [0xfa0] RESMANAGER: Added serialise block for ResGroupResourcesOptimised
+24/05/15 21:25:09.453: [0xfa0] RESMANAGER: Setting build style to 'gles1'
+24/05/15 21:25:09.453: [0xfa0] UTIL: Added class factory for CIwGxFont (hash 0xa68776be)
+24/05/15 21:25:09.454: [0xfa0] UTIL: Added class factory for CIwGxFontTTFont (hash 0xc084661d)
+24/05/15 21:25:09.454: [0xfa0] UTIL: Added class factory for CIwResTemplateGXFONT (hash 0xf4d12aa4)
+24/05/15 21:25:09.455: [0xfa0] EXT: s3eExtGetHash: 0x9fe3ea45 [0x0aa65d28 size=16]
+24/05/15 21:25:09.456: [0xfa0] EXT: initializing extension: s3eOSReadString
+24/05/15 21:25:09.456: [0xfa0] UTIL: Found 'textures/ship_bullet.png' using default path
+24/05/15 21:25:09.457: [0xfa0] FILE: s3eFileOpen('textures/ship_bullet.png', 'rb') succeeded, id=1015 p=0x0f550e70
+24/05/15 21:25:09.457: [0xfa0] FILE: s3eFileClose h=0x0f550e70
+24/05/15 21:25:09.459: [0xfa0] UTIL: Found 'textures/saucer.png' using default path
+24/05/15 21:25:09.460: [0xfa0] FILE: s3eFileOpen('textures/saucer.png', 'rb') succeeded, id=1016 p=0x0f550f8c
+24/05/15 21:25:09.461: [0xfa0] FILE: s3eFileClose h=0x0f550f8c
+24/05/15 21:25:09.465: [0xfa0] UTIL: Found 'textures/enemy_top.png' using default path
+24/05/15 21:25:09.466: [0xfa0] FILE: s3eFileOpen('textures/enemy_top.png', 'rb') succeeded, id=1017 p=0x0f5510a8
+24/05/15 21:25:09.467: [0xfa0] FILE: s3eFileClose h=0x0f5510a8
+24/05/15 21:25:09.471: [0xfa0] UTIL: Found 'textures/enemy_mid.png' using default path
+24/05/15 21:25:09.471: [0xfa0] FILE: s3eFileOpen('textures/enemy_mid.png', 'rb') succeeded, id=1018 p=0x0f5511c4
+24/05/15 21:25:09.472: [0xfa0] FILE: s3eFileClose h=0x0f5511c4
+24/05/15 21:25:09.475: [0xfa0] UTIL: Found 'textures/enemy_bot.png' using default path
+24/05/15 21:25:09.476: [0xfa0] FILE: s3eFileOpen('textures/enemy_bot.png', 'rb') succeeded, id=1019 p=0x0f5512e0
+24/05/15 21:25:09.477: [0xfa0] FILE: s3eFileClose h=0x0f5512e0
+24/05/15 21:25:09.486: [0xfa0] UTIL: Found 'textures/barrier.png' using default path
+24/05/15 21:25:09.487: [0xfa0] FILE: s3eFileOpen('textures/barrier.png', 'rb') succeeded, id=1020 p=0x0f5513fc
+24/05/15 21:25:09.488: [0xfa0] FILE: s3eFileClose h=0x0f5513fc
+24/05/15 21:25:09.498: [0xfa0] UTIL: Found 'textures/damage.png' using default path
+24/05/15 21:25:09.499: [0xfa0] FILE: s3eFileOpen('textures/damage.png', 'rb') succeeded, id=1021 p=0x0f551518
+24/05/15 21:25:09.500: [0xfa0] FILE: s3eFileClose h=0x0f551518
+24/05/15 21:25:09.508: [0xfa0] UTIL: Found 'textures/barrier_1.png' using default path
+24/05/15 21:25:09.509: [0xfa0] FILE: s3eFileOpen('textures/barrier_1.png', 'rb') succeeded, id=1022 p=0x0f551634
+24/05/15 21:25:09.510: [0xfa0] FILE: s3eFileClose h=0x0f551634
+24/05/15 21:25:09.519: [0xfa0] UTIL: Found 'textures/barrier_2.png' using default path
+24/05/15 21:25:09.520: [0xfa0] FILE: s3eFileOpen('textures/barrier_2.png', 'rb') succeeded, id=1023 p=0x0f551750
+24/05/15 21:25:09.521: [0xfa0] FILE: s3eFileClose h=0x0f551750
+24/05/15 21:25:09.529: [0xfa0] UTIL: Found 'textures/barrier_3.png' using default path
+24/05/15 21:25:09.530: [0xfa0] FILE: s3eFileOpen('textures/barrier_3.png', 'rb') succeeded, id=1024 p=0x0f55186c
+24/05/15 21:25:09.531: [0xfa0] FILE: s3eFileClose h=0x0f55186c
+24/05/15 21:25:09.538: [0xfa0] UTIL: Found 'textures/barrier_4.png' using default path
+24/05/15 21:25:09.539: [0xfa0] FILE: s3eFileOpen('textures/barrier_4.png', 'rb') succeeded, id=1025 p=0x0f551988
+24/05/15 21:25:09.540: [0xfa0] FILE: s3eFileClose h=0x0f551988
+24/05/15 21:25:09.545: [0xfa0] UTIL: Found 'fonts/arial8.gxfont' using default path
+24/05/15 21:25:09.547: [0xfa0] UTIL: Found 'fonts/arial8.gxfont' using default path
+24/05/15 21:25:09.547: [0xfa0] FILE: s3eFileOpen('fonts/arial8.gxfont', 'r') succeeded, id=1026 p=0x0f551aa4
+24/05/15 21:25:09.549: [0xfa0] UTIL: Found 'fonts/arial8.tga' using default path
+24/05/15 21:25:09.550: [0xfa0] FILE: s3eFileOpen('fonts/arial8.tga', 'rb') succeeded, id=1027 p=0x0f551bc0
+24/05/15 21:25:09.551: [0xfa0] FILE: s3eFileClose h=0x0f551bc0
+24/05/15 21:25:09.552: [0xfa0] GX_FONT_VERBOSE: Font build took 4 ms
+24/05/15 21:25:09.553: [0xfa0] FILE: s3eFileClose h=0x0f551aa4
+24/05/15 21:25:09.554: [0xfa0] UTIL: Found 'data-gles1/fonts/arial8.gxfont.bin' using path global 'data-gles1'
+24/05/15 21:25:09.555: [0xfa0] FILE: s3eFileOpen('data-gles1/fonts/arial8.gxfont.bin', 'wb') succeeded, id=1028 p=0x0f551cdc
+24/05/15 21:25:09.558: [0xfa0] FILE: s3eFileClose h=0x0f551cdc
+24/05/15 21:25:09.559: [0xfa0] UTIL: Found 'data-gles1/fonts/arial8.gxfont.bin' using path global 'data-gles1'
+24/05/15 21:25:09.559: [0xfa0] FILE: s3eFileOpen('data-gles1/fonts/arial8.gxfont.bin', 'rb') succeeded, id=1029 p=0x0f551df8
+24/05/15 21:25:09.561: [0xfa0] FILE: s3eFileClose h=0x0f551df8
+24/05/15 21:25:09.563: [0xfa0] UTIL: Found 'textures/ship.png' using default path
+24/05/15 21:25:09.563: [0xfa0] FILE: s3eFileOpen('textures/ship.png', 'rb') succeeded, id=1030 p=0x0f551f14
+24/05/15 21:25:09.564: [0xfa0] FILE: s3eFileClose h=0x0f551f14
+24/05/15 21:25:09.569: [0xfa0] FILE: s3eFileOpen('textures/barrier.png', 'rb') succeeded, id=1031 p=0x0f552030
+24/05/15 21:25:09.570: [0xfa0] FILE: s3eFileClose h=0x0f552030
+24/05/15 21:25:09.572: [0xfa0] GX_VERBOSE: Generating default shader: #define FRAGMENT 
+#define UV0_STREAM 
+#define TEX0 
+24/05/15 21:25:09.574: [0xfa0] GX_VERBOSE: Generating default shader: #define UV0_STREAM 
+24/05/15 21:25:09.601: [0xfa0] GX_VERBOSE: Generating default shader: #define FRAGMENT 
+#define UV0_STREAM 
+#define COL_STREAM 
+#define TEX0 
+24/05/15 21:25:09.603: [0xfa0] GX_VERBOSE: Generating default shader: #define UV0_STREAM 
+#define COL_STREAM 
+24/05/15 21:25:09.629: [0xfa0] GX_VERBOSE: Generating default shader: #define FRAGMENT 
+#define COL_STREAM 
+24/05/15 21:25:09.631: [0xfa0] GX_VERBOSE: Generating default shader: #define COL_STREAM 
+24/05/15 21:25:12.792: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x76, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:12.887: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x76, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:14.751: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x25, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:15.055: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x25, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:15.056: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:15.199: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:15.527: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:15.647: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:15.755: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:15.871: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:15.967: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:16.105: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:16.200: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:16.303: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:16.415: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:16.519: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:16.607: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:16.743: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:16.942: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x27, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:16.943: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:16.999: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x27, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:17.106: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:17.159: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x27, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:17.343: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:17.375: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x27, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:17.487: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:17.687: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:17.783: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:17.855: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x25, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:17.999: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x25, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:18.151: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:18.271: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x27, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:18.312: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:18.447: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:18.501: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x27, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:18.591: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:19.327: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:19.447: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:19.975: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x27, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:20.279: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:20.447: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:20.855: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:20.991: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:21.103: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x27, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:21.919: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:22.047: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:23.031: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x25, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:23.231: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x25, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:23.232: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:23.351: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:23.391: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x27, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:23.451: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x27, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:24.112: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x25, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:24.231: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x25, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:24.232: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:24.359: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:25.312: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x27, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:25.423: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:25.439: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x27, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:25.511: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:26.512: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:26.615: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:26.975: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x25, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:27.467: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x25, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:27.500: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x25, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:27.533: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x25, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:27.551: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:27.680: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:28.375: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:28.535: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:28.647: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:28.735: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x25, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:28.791: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:28.871: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:28.951: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x27, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:28.983: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:29.087: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:29.151: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x27, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:29.183: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:29.311: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:29.339: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x25, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:29.407: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:29.719: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x25, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:29.776: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:29.923: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:29.999: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:30.119: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:30.239: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:30.319: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:30.415: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:30.511: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:30.599: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:30.723: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:30.807: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:30.911: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:31.015: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:31.119: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:31.215: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:31.327: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:31.417: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:31.530: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:31.767: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:31.895: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:32.015: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:32.123: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:32.239: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:32.383: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:32.495: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:32.567: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:32.671: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x27, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:32.862: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:32.874: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:33.399: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:33.455: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x27, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:33.503: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:34.111: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:34.199: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:34.975: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x27, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:35.131: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x27, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:35.132: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:35.231: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:36.047: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:36.167: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:36.679: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x27, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:36.983: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:37.143: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:37.247: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x27, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:37.301: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:37.410: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:37.487: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:37.591: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:37.623: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x27, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:37.687: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:37.744: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x27, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:37.783: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:37.858: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x25, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:37.903: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:38.015: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x25, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:38.023: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:38.104: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:38.207: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:38.311: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:38.407: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:38.495: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:38.496: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x27, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:38.615: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:38.687: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x27, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:38.688: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:38.799: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:38.831: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x25, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:38.887: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:38.928: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x25, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:38.983: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:39.071: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:39.183: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:39.239: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:39.371: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:39.415: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:39.543: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:39.631: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:39.655: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x27, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:39.695: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x27, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:39.743: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:39.831: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:39.943: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:40.023: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:40.130: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:40.223: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:40.329: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:40.423: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:40.543: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:40.623: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:40.743: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:40.823: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:40.935: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:41.031: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:41.151: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:41.626: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x27, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:41.751: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:41.952: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:41.967: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x27, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:43.032: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:43.058: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x27, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:43.127: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:43.247: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:43.327: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:43.407: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x27, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:43.591: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x25, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:43.842: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x25, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:44.119: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x25, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:44.143: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x25, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:44.847: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:45.023: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:45.535: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x25, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:45.679: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x25, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:45.743: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:45.863: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:46.087: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x27, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:46.215: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x27, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:46.443: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:46.583: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:46.663: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:46.775: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:46.865: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:46.911: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x27, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:46.967: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:47.063: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:47.183: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:47.303: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:47.375: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:47.623: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:47.719: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x27, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:47.720: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:47.815: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:47.927: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:48.011: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:48.063: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x27, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:48.111: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:48.207: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:48.234: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x27, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:48.319: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:48.399: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:48.519: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:48.599: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:48.695: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:48.783: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:48.894: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:48.927: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:49.054: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:49.151: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:49.247: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:49.327: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:49.430: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:49.527: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:49.622: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:49.746: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:49.823: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:49.823: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x25, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:49.935: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:50.013: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x25, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:50.039: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:50.218: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:50.350: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:50.446: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:50.558: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:50.945: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x25, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:51.270: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:51.407: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:51.446: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x25, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:51.502: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:51.622: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:51.702: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:51.807: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:51.878: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x27, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:52.211: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:52.326: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:52.521: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x27, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:53.174: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:53.294: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:53.622: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:53.758: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:54.599: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x25, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:54.975: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:55.094: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:55.182: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:55.215: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x25, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:55.296: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:55.374: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:55.486: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:55.566: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:55.599: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x27, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:55.666: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:55.760: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:55.854: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:55.944: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:55.991: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x27, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:56.030: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:56.130: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:56.222: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:56.225: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x27, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:56.318: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:56.342: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x27, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:56.414: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:56.502: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:56.599: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:56.698: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:56.795: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:56.894: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:56.974: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:57.070: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:57.158: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:57.269: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:57.367: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:57.454: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:57.542: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x25, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:57.566: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:57.662: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:57.766: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:57.878: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:57.982: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:58.070: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:58.216: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x25, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:58.218: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:58.286: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:58.398: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:58.526: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x25, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:58.567: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:58.718: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:58.830: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:58.977: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:59.014: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x25, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:59.110: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:59.206: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:59.351: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:59.447: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:25:59.726: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:59.798: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x27, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:25:59.854: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:00.007: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x27, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:00.086: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:00.182: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:00.406: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x25, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:00.606: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x25, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:00.638: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:00.782: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:00.882: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:00.998: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:01.095: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:01.207: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:01.303: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x25, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:01.334: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:01.390: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:02.534: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:02.662: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x25, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:02.694: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:02.815: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:02.922: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:02.958: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x27, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:03.006: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:03.126: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:03.192: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:03.318: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:03.382: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:03.415: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x27, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:03.504: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:03.558: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:03.678: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:03.750: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:03.854: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:03.934: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:04.032: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:04.110: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:04.238: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:04.336: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:04.414: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:04.528: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:04.633: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:04.766: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:04.864: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:04.958: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:05.073: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:05.182: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:05.265: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:05.375: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:05.495: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:05.798: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x27, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:05.870: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:06.019: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:06.062: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x27, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:06.102: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:06.206: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:06.286: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:06.414: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:07.054: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x25, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:07.174: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:07.190: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x25, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:07.305: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:07.366: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:07.497: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:07.926: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:08.062: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:08.462: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x25, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:08.622: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x25, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:08.625: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:08.774: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:09.494: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:09.640: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:10.014: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:10.151: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:11.007: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:11.115: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:11.430: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:11.566: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:12.182: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x27, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:12.326: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x27, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:12.382: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:12.534: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:12.815: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x25, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:12.958: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x25, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:12.982: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:13.143: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:13.928: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x27, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:14.110: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:14.183: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x27, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:14.270: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:14.358: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:14.550: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:14.950: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x25, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:15.454: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x25, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:15.483: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x25, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:15.515: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x25, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:15.548: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x25, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:15.581: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x25, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:15.614: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x25, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:15.647: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x25, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:15.680: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x25, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:15.714: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x25, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:15.746: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x25, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:15.779: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x25, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:15.813: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x25, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:15.845: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x25, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:15.878: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x25, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:15.912: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x25, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:15.944: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x25, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:15.984: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x25, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:16.010: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x25, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:16.044: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x25, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:16.054: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x25, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:16.056: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x27, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:16.556: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x27, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:16.586: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x27, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:16.619: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x27, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:16.652: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x27, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:16.685: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x27, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:16.710: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x27, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:16.878: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:17.030: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:17.350: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x27, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:17.447: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x27, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:17.550: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x25, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:17.902: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:17.958: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x25, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:18.022: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:18.074: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:18.198: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:18.270: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:18.296: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x27, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:18.382: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:18.454: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:18.566: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:18.649: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:18.774: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x27, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:18.798: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:19.430: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x27, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:19.570: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:19.686: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:21.409: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x27, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:21.494: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x25, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:21.926: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x25, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:21.990: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x27, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:22.254: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x27, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:22.582: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x27, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:22.894: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x27, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:22.944: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:23.078: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:23.463: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x25, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:23.962: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x25, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:23.997: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x25, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:24.028: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x25, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:24.063: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x25, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:24.094: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x25, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:24.131: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x25, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:24.159: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x25, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:24.193: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x25, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:24.225: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x25, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:24.259: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x25, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:24.278: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:24.375: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x25, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:24.430: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:24.774: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x27, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:25.198: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x27, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:25.199: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x25, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:25.482: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x25, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:25.537: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x27, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:25.670: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x27, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:25.743: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x25, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:26.030: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x25, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:26.374: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:26.513: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:26.922: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x27, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:27.418: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x27, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:27.451: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x27, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:27.485: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x27, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:27.518: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x27, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:27.550: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x27, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:27.583: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x27, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:27.590: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x27, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:27.838: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:27.953: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:28.322: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x25, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:28.705: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x25, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:28.747: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:28.758: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x27, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:28.821: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:28.966: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:29.069: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:29.174: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:29.254: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:29.350: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:29.408: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x27, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:29.461: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:29.538: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:29.638: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:29.800: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x25, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:29.926: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x25, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:31.117: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x27, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:31.197: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x27, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:31.285: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:31.455: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:31.885: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x25, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:32.385: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x25, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:32.418: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x25, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:32.451: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x25, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:32.484: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x25, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:32.517: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x25, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:32.550: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x25, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:32.583: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x25, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:32.619: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x25, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:32.649: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x25, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:32.669: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x25, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:32.670: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:32.765: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:33.053: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x25, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:33.197: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x25, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:33.392: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:33.525: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:33.886: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x25, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:33.947: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:34.045: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:34.154: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:34.245: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:34.366: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:34.486: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:34.583: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:34.720: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:35.389: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x25, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:35.413: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:35.525: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:35.686: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:35.734: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:35.925: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:35.997: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:36.133: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:36.247: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:36.341: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:36.445: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:36.541: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:36.645: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:36.749: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:36.829: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:37.037: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:37.038: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x25, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:37.105: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:37.157: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x25, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:37.189: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:37.328: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:37.413: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:37.525: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:37.605: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:37.717: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:37.797: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:37.917: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:37.989: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:38.101: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:38.165: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:38.269: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:38.365: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:38.469: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:38.565: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:38.677: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:38.765: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:38.885: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:38.982: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:38.997: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x27, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:39.061: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:39.381: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x27, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:39.437: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x25, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:39.717: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x25, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:39.754: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:39.917: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:39.999: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:40.125: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:40.243: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:40.333: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:40.447: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:40.581: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:40.701: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x25, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:40.757: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x25, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:41.061: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:41.181: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:41.285: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:41.413: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:41.477: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:41.597: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:41.701: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:41.797: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:41.941: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:42.105: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:42.166: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:42.253: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:42.341: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x27, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:42.597: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:42.653: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x27, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:42.733: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:42.861: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:43.029: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:43.093: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:43.221: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:43.493: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x27, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:43.993: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x27, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:44.026: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x27, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:44.062: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x27, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:44.092: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x27, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:44.125: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x27, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:44.158: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x27, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:44.191: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x27, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:44.224: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x27, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:44.257: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x27, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:44.290: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x27, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:44.323: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x27, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:44.357: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x27, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:44.389: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x27, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:44.422: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x27, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:44.455: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x27, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:44.488: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x27, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:44.521: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x27, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:44.556: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x27, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:44.587: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x27, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:44.620: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x27, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:44.654: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x27, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:44.695: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x27, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:44.719: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x27, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:44.752: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x27, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:44.785: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x27, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:44.819: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x27, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:44.851: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x27, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:44.888: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x27, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:44.917: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x27, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:44.929: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x27, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:45.149: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x25, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:45.543: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x25, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:45.781: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:45.951: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x20, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:26:48.073: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x76, pressed = 1, sysKey = 0, thread = 6692
+24/05/15 21:26:48.229: [0x1a24] KEYBOARD: Got key event, Virtual Key = 0x76, pressed = 0, sysKey = 0, thread = 6692
+24/05/15 21:29:09.736: [0x1a24] DEVICE: s3eDeviceNotify 2
+24/05/15 21:29:09.737: [0x1a24] DEVICE: done s3eDeviceNotify
+24/05/15 21:29:09.737: [0x1a24] DEVICE: done RequestQuit
+24/05/15 21:29:09.747: [0xfa0] GX_VERBOSE: IwGxTerminate
+24/05/15 21:29:09.749: [0xfa0] IW_GL: Terminating EGL...
+24/05/15 21:29:09.772: [0xfa0] IW_GL: Terminating EGL... Done
+24/05/15 21:29:09.773: [0xfa0] UTIL: IwCallStackTerm
+24/05/15 21:29:09.774: [0xfa0] FIBRE: calling s3eFibreExit() (rtn=0x00000000)
+24/05/15 21:29:09.774: [0xfa0] FIBRE: s3eFibreExit() 0x00454568
+24/05/15 21:29:09.774: [0xfa0] FIBRE: s3eFibreExit() to 0x00454544 from 0x00454568
+24/05/15 21:29:09.775: [0xfa0] THREAD: s3eThreadCancelAll
+24/05/15 21:29:09.775: [0xfa0] THREAD: done s3eThreadCancelAll
+24/05/15 21:29:09.775: [0xfa0] THREAD: all threads now dead (current=0x00000fa0)
+24/05/15 21:29:09.776: [0xfa0] LOADER: Application has exited, starting cleanup
+24/05/15 21:29:09.776: [0xfa0] LOADER: Done execute S3E 0x00155c78 [rtn=0]
+24/05/15 21:29:09.776: [0xfa0] SOUND: s3eSoundStop: started=0
+24/05/15 21:29:09.777: [0xfa0] LOADER: Unloading S3E 0x00155c78 [c:\Users\Ahmed Saleh\Documents\spaceinvader\build_spaceinvader_vc12\Debug_spaceinvader_VC12_x86\spaceinvader.s86]
+24/05/15 21:29:09.777: [0xfa0] LOADER: deleting DLL: c:\Users\Ahmed Saleh\Documents\spaceinvader\build_spaceinvader_vc12\Debug_spaceinvader_VC12_x86\spaceinvader.s86
+24/05/15 21:29:09.778: [0xfa0] DEVICE: Terminating LICENSE
+24/05/15 21:29:09.779: [0xfa0] DEVICE: Terminating VIDEO
+24/05/15 21:29:09.779: [0xfa0] DEVICE: Terminating AUDIO
+24/05/15 21:29:09.779: [0xfa0] DEVICE: Terminating SOUND
+24/05/15 21:29:09.804: [0xfa0] DEVICE: Terminating POINTER
+24/05/15 21:29:09.804: [0xfa0] DEVICE: Terminating ACCELEROMETER
+24/05/15 21:29:09.805: [0xfa0] DEVICE: Terminating GL
+24/05/15 21:29:09.805: [0xfa0] DEVICE: Terminating VIBRA
+24/05/15 21:29:09.805: [0xfa0] DEVICE: Terminating TIMER
+24/05/15 21:29:09.806: [0xfa0] DEVICE: Terminating STORAGE
+24/05/15 21:29:09.806: [0xfa0] DEVICE: Terminating SOCKET
+24/05/15 21:29:09.808: [0xfa0] DEVICE: Terminating CONFIG
+24/05/15 21:29:09.808: [0xfa0] DEVICE: Terminating ERROR
+24/05/15 21:29:09.809: [0xfa0] DEVICE: Terminating MEMORY
+24/05/15 21:29:09.813: [0xfa0] DEVICE: Terminating CRYPTO
+24/05/15 21:29:09.827: [0xfa0] DEVICE: Terminating EXT
+24/05/15 21:29:09.828: [0xfa0] EXT: terminating extension: s3eWindow
+24/05/15 21:29:09.829: [0xfa0] EXT: terminating extension: s3eThread
+24/05/15 21:29:09.829: [0xfa0] DEVICE: Terminating SURFACE
+24/05/15 21:29:09.834: [0xfa0] DEVICE: Terminating KEYBOARD
+24/05/15 21:29:09.836: [0xfa0] DEVICE: Terminating DEBUG
+-- END TRACE --

@@ -1,0 +1,17 @@
+﻿Build started 2/8/2015 12:24:42 PM.
+     1>Project "c:\Users\Ahmed Saleh\Documents\spaceinvader\build_spaceinvader_vc12\spaceinvader_vc12.vcxproj" on node 2 (Build target(s)).
+     1>CustomBuild:
+         Performing Custom Build Tools
+         msg: option 'default-buildenv' overridden by command line
+         C:\Marmalade\7.4\s3e\makefile_builder\mkb.py c:/Users/Ahmed Saleh/Documents/spaceinvader/spaceinvader.mkb --default-buildenv=vc12 --msvc-project
+         Building project: c:/Users/Ahmed Saleh/Documents/spaceinvader/spaceinvader.mkb
+         done
+       ClCompile:
+         C:\Marmalade\7.4\s3e\bin\CL.exe /c /Ic:/marmalade/7.4/modules/iwutil/h /Ic:/marmalade/7.4/modules/third_party/libjpeg/h /Ic:/marmalade/7.4/modules/third_party/zlib/h /Ic:/marmalade/7.4/modules/third_party/libpng/h /Ic:/marmalade/7.4/modules/iw2dscenegraphcore/h /Ic:/marmalade/7.4/modules/iw2dscenegraph/h /Ic:/marmalade/7.4/modules/iw2d/h /Ic:/marmalade/7.4/modules/iwgx/h /Ic:/marmalade/7.4/modules/iwgl/h /Ic:/marmalade/7.4/modules/iwgeom/h /Ic:/marmalade/7.4/modules/iwresmanager/h /Ic:/marmalade/7.4/extensions/pvrtextool/h /Ic:/marmalade/7.4/modules/iwgxfont/h /Ic:/marmalade/7.4/modules/third_party/tiniconv/source /Ic:/marmalade/7.4/modules/iwtween/h /Ic:/marmalade/7.4/s3e/h /Ic:/marmalade/7.4/s3e/h/ext /Ic:/marmalade/7.4/s3e/h/std /Ic:/marmalade/7.4/s3e/h/std/c++ /Ic:/marmalade/7.4/s3e/h/ext_legacy /Ic:/marmalade/7.4/s3e/h/legacy /I. /Z7 /nologo /W3 /WX- /MP /Od /Oy- /X /Gm- /EHsc /RTC1 /MTd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug_spaceinvader_vc12_gcc_arm\\" /Fd"Debug_spaceinvader_vc12_gcc_arm\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt /S3Eproject /J /Fe"s3e-custom-tool='c:/marmalade/7.4/s3e/gcc/win32/bin/arm-none-eabi-gcc.exe' tooltype=gcc_compiler -funsigned-char -fno-strict-aliasing -fno-stack-protector -fno-short-enums -fshort-wchar -Wall -fomit-frame-pointer -fmessage-length=0 -Wno-unused -Wno-parentheses -save-temps -ffunction-sections -mstructure-size-boundary=8 -march=armv6 -mfloat-abi=soft -mthumb-interwork -mword-relocations -Wno-switch -Wno-psabi -fvisibility=hidden -nostdinc -fPIC --cppflag=-Wno-reorder --cppflag=-fvisibility-inlines-hidden --cppflag=-fno-exceptions --cppflag=-nostdinc++ -g -O0 -gdwarf-2" /FD  /FI"c:\Users\Ahmed Saleh\Documents\spaceinvader\build_spaceinvader_vc12\temp_defines_debug.h" ..\..\..\..\..\marmalade\7.4\modules\iw2dscenegraph\source\Iw2DSceneGraph.cpp ..\..\..\..\..\marmalade\7.4\modules\iw2dscenegraphcore\source\Iw2DSceneGraphCore.cpp ..\..\..\..\..\marmalade\7.4\modules\iwtween\source\IwTween.cpp ..\..\..\..\..\marmalade\7.4\extensions\pvrtextool\interface\PVRTexTool_interface.cpp ..\source\Barrier.cpp ..\source\Bullet.cpp ..\source\Input.cpp ..\source\Invader.cpp ..\source\Rect.cpp ..\source\resources.cpp ..\source\Saucer.cpp ..\source\Ship.cpp ..\source\spaceinvader.cpp
+         ARM Compiling(GCC) c:\marmalade\7.4\modules\iw2dscenegraph\source\Iw2DSceneGraph.cpp ...
+         ARM Compiling(GCC) c:\marmalade\7.4\modules\iw2dscenegraphcore\source\Iw2DSceneGraphCore.cpp ...
+     1>Done Building Project "c:\Users\Ahmed Saleh\Documents\spaceinvader\build_spaceinvader_vc12\spaceinvader_vc12.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:06.20

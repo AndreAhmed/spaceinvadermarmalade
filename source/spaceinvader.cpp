@@ -10,6 +10,7 @@
 #include "Saucer.h"
 #include "resources.h"
 #include  <list>
+#include  <map>
 
 
 /************************************************************************/
@@ -33,7 +34,7 @@ struct Invaders_t
 {
 	vector<Invader*> *invaders;
 	direction_t  direction;
-	int speed;
+	float speed;
 	int killed;
 	bool alive;
 };
@@ -43,7 +44,7 @@ struct Invaders_t g_Invaders;
 void Init_Invaders(Resources *resources)
 {
 	g_Invaders.direction = right;
-	g_Invaders.speed = 1;
+	g_Invaders.speed = 0.01f;
 	g_Invaders.killed = 0;
 
 	g_Invaders.invaders = new vector<Invader*>();
@@ -104,7 +105,7 @@ void Move_Invaders(float delta)
 				}
 			}
 
-			(*it)->AlienSprite->m_X += 0.01f * delta;
+			(*it)->AlienSprite->m_X += g_Invaders.speed * delta;
 			(*it)->Update(delta);
 			(*it)->Render();
 		}
@@ -124,7 +125,7 @@ void Move_Invaders(float delta)
 				}
 			}
 
-			(*it)->AlienSprite->m_X -= 0.01f * delta;
+			(*it)->AlienSprite->m_X -= g_Invaders.speed * delta;
 			(*it)->Update(delta);
 			(*it)->Render();
 		}
@@ -298,11 +299,11 @@ void CheckBulletsInvadersCollision(Ship *ship)
 			for (list<Bullet*>::iterator it = ship->Bullets->begin(); it != ship->Bullets->end();)
 			{
 
-				float left = (*it)->Position.x - 5;
-				float top = (*it)->Position.y - 13;
+				float left = (*it)->Position.x;
+				float top = (*it)->Position.y;
 
-				if (CheckCollision(left, top, (*invIter)->AlienSprite->m_X, (*invIter)->AlienSprite->GetImage()->GetWidth() / 4
-					, (*invIter)->AlienSprite->m_Y, (*invIter)->AlienSprite->GetImage()->GetHeight() / 4))
+				if (CheckCollision(left, top, (*invIter)->AlienSprite->m_X, (*invIter)->AlienAtals->GetFrameWidth()-20
+					, (*invIter)->AlienSprite->m_Y, (*invIter)->AlienAtals->GetFrameHeight()))
 				{
 					isBulletsInvaderCollided = true;
 					Bullet *bullet = *it;
@@ -366,109 +367,102 @@ void Render_Barriers(vector<Barrier*> *barriers)
 	}
 }
 
-bool CheckCollisionNewBarriers(Ship *ship, vector<Barrier*> *barriers, CIwTexture *tex, uint8*pixels, uint32 pitch, Resources *gameResources)
+bool CheckCollision(int barrierX, int barrierY, Ship *ship, CIwTexture *tex, uint8*pixels, Resources *gameResources)
 {
 	bool isCollision = false;
-	for (vector<Barrier*>::iterator itBarrier = barriers->begin(); itBarrier != barriers->end();)
+
+	cRect barrierRect;
+	barrierRect.x = barrierX;
+	barrierRect.y = barrierY;
+	barrierRect.w = 51;
+	barrierRect.h = 35;
+	CIwFMat2D t;
+	t.SetIdentity();
+	Iw2DSetTransformMatrix(t);
+	Iw2DSetColour(0xDDDDDDDD); // Set red
+	Iw2DDrawRect(CIwFVec2(barrierRect.x, barrierRect.y), CIwFVec2(barrierRect.w, barrierRect.h)); // Draw red outline
+
+	for (list<Bullet*>::iterator it = ship->Bullets->begin(); it != ship->Bullets->end();)
 	{
-		for (list<Bullet*>::iterator it = ship->Bullets->begin(); it != ship->Bullets->end();)
+
+		bool didHit = false;
+		// if there is intersection
+		if (IntersectsWith((*it)->BoundingRect, barrierRect))
 		{
-			if (IntersectsWith((*it)->BoundingRect, (*itBarrier)->BoundingRect))
+			std::map<int, int> hits;
+
+			// subtract (*it) bullet position from barrrier's rect 
+			int normX = (*it)->Position.x - barrierRect.x;
+			int normY = (*it)->Position.y - barrierRect.y;
+
+			// barrier image pixels 
+			uint32* ptr = (uint32*)pixels;
+
+			for (int y = 0; y < 35; y++)
 			{
-
-				cRect bounding = Intersection((*it)->BoundingRect, (*itBarrier)->BoundingRect);
-
-				Iw2DSetColour(0xff0000ff); // Set red
-				//Iw2DDrawRect(CIwFVec2(bounding.x, bounding.y), CIwFVec2(20, 20));
-				int normX = (*it)->Position.x - (*itBarrier)->Position.x;
-				int normY = (*it)->Position.y - (*itBarrier)->Position.y;
-
-				(*itBarrier)->numHits++;
-
-				Bullet *bullet = *it;
-				it = ship->Bullets->erase(it);
-				delete bullet;
-				ship->Canfire = true;
-				isCollision = true;
-
-				uint32* ptr = (uint32*)pixels;
-				int y = 0;
-
-				for (int i = 0; i < 35; i++)
+				for (int x = 0; x < 51; x++)
 				{
-
-					int pixelOffset = y + normX*51 ;
-					if (ptr[pixelOffset] != 0xff000000)
+					int pixelOffset = y * 51 + x;
+					unsigned int color = ptr[pixelOffset];
+					if (color != 0xFF000000)
 					{
-						int radius = 9;
-						for (int y = -radius; y <= radius; y++)
+						// if this pixel is in bullet's rect
+						if (CheckCollision(x, y, normX, 3, normY, 13))
 						{
-							for (int x = -radius; x <= radius; x++)
+							didHit = true;
+
+							hits[x] = y;
+						}
+					}
+				}
+			 }
+
+			for (std::map<int, int>::iterator it = hits.begin(); it != hits.end(); it++)
+			{
+				//	blast a circle around that bullet hit position
+				int radius = 4;
+				for (int yy = -radius; yy <= radius; yy++)
+				{
+					for (int xx = -radius; xx <= radius; xx++)
+					{
+						if (xx*xx + yy*yy <= radius*radius)
+						{
+							int hitX = it->first;
+							int hitY = it->second;
+
+							int j = xx  + hitX;
+							int i = yy  + hitY;
+
+							if ( (j >= 0 && j < 51) && (i >= 0 && i < 35))
 							{
-								if (x*x + y*y <= radius*radius)
-								{
-									int j = x + normX;
-									int i = y + normY;
-									int pixelOffset = j + i * 51;
-									ptr[pixelOffset] = 0xff000000;
-								}
+								int pixelOffset = i*51 + j;
+								ptr[pixelOffset] = 0xff000000;
 							}
 						}
-						break;
 					}
-					y++;
 				}
-				/*
-						for (int i = normX - 16; i <= normX + 16; i++)
-						{
-						for (int j = normY - 16; j <= normY + 16; j++)
-						if (i >= 0 && i < 51 && j > 0 && j < 35)
-						{
-						uint8 pixelOffset = i * 4 + j*pitch;
-						ptr += pixelOffset;
-						*ptr = 0xff0000ff;
-						}
-						}
-
-						CIwFMat2D Transform;
-						// Transform matrix
-						Transform.SetIdentity();
-						Transform.SetTrans((*it)->Position);
-						Iw2DSetTransformMatrix(Transform);
-						Iw2DSetColour(0xffffffff);
-						Iw2DDrawImage(gameResources->getDamageImage(),
-						CIwFVec2(Transform.t.x, Transform.t.y),
-						CIwFVec2(gameResources->getDamageImage()->GetWidth(), gameResources->getDamageImage()->GetHeight()));
-						*/
-
-			
-				tex->ChangeTexels(pixels);
-				tex->Upload();
- 
-			}
-			else
-			{
-				it++;
 			}
 		}
 
-
-		if ((*itBarrier)->numHits == 44)
+		if (didHit)
 		{
-			Barrier *barrier = *itBarrier;
-			itBarrier = barriers->erase(itBarrier);
-			delete barrier;
+			//delete the bullet
+			Bullet *bullet = *it;
+			it = ship->Bullets->erase(it);
+			delete bullet;
+			ship->Canfire = true;
+			isCollision = true;
 		}
 		else
 		{
-			itBarrier++;
+			it++;
 		}
-	}
+ 	}
 
+	tex->ChangeTexels(pixels);
+	tex->Upload();
 	return isCollision;
 }
-
-
 
 void DrawImage(CIwTexture* tex, float X, float Y, float W, float H, float Angle = 0.0f)
 {
@@ -534,16 +528,34 @@ int main()
 
 	CIwImage* image = new CIwImage;
 	image->LoadFromFile("textures/barrier.png");
-	CIwTexture*tex = new CIwTexture();
+	CIwTexture*barrier_1 = new CIwTexture();
+
+	barrier_1->CopyFromImage(image);
+	uint8 * pixels_barrier1 = barrier_1->GetTexels();
+	uint32 pitch_barrier1 = barrier_1->GetPitch();
+	barrier_1->SetFormatHW(CIwImage::ABGR_8888);
+	barrier_1->SetMipMapping(false);
+	barrier_1->SetModifiable(true);
+	barrier_1->Upload();
+
+	CIwTexture*barrier_2 = new CIwTexture();
+	barrier_2->CopyFromImage(image);
+	uint8 * pixels_barrier2 = barrier_2->GetTexels();
+	uint32 pitch_barrier2 = barrier_2->GetPitch();
+	barrier_2->SetFormatHW(CIwImage::ABGR_8888);
+	barrier_2->SetMipMapping(false);
+	barrier_2->SetModifiable(true);
+	barrier_2->Upload();
 
 
-	tex->CopyFromImage(image);
-	uint8 * pixels = tex->GetTexels();
-	uint32 pitch = tex->GetPitch();
-	tex->SetFormatHW(CIwImage::ABGR_8888);
-	tex->SetMipMapping(false);
-	tex->SetModifiable(true);
-	tex->Upload();
+	CIwTexture*barrier_3 = new CIwTexture();
+	barrier_3->CopyFromImage(image);
+	uint8 * pixels_barrier3 = barrier_3->GetTexels();
+	uint32 pitch_barrier3 = barrier_3->GetPitch();
+	barrier_3->SetFormatHW(CIwImage::ABGR_8888);
+	barrier_3->SetMipMapping(false);
+	barrier_3->SetModifiable(true);
+	barrier_3->Upload();
 
 	int score = 0;
 
@@ -562,6 +574,15 @@ int main()
 
 		Move_Invaders(delta);
 
+
+		CheckCollision(50, 490, ship, barrier_1, pixels_barrier1, gameResources);
+		CheckCollision(150, 490, ship, barrier_2, pixels_barrier2, gameResources);
+		CheckCollision(250, 490, ship, barrier_3, pixels_barrier3, gameResources);
+		DrawImage(barrier_1, 50, 490, image->GetWidth(), image->GetHeight());
+		DrawImage(barrier_2, 150, 490, image->GetWidth(), image->GetHeight());
+		DrawImage(barrier_3, 250, 490, image->GetWidth(), image->GetHeight());
+
+
 		ship->Update(delta);
 		ship->Render();
 
@@ -573,15 +594,19 @@ int main()
 		saucer.Update(delta);
 		saucer.Render();
 
-		Render_Barriers(barriers);
+		if (g_Invaders.killed == 5)
+			g_Invaders.speed = 0.02f;
+		if (g_Invaders.killed == 25)
+			g_Invaders.speed = 0.05f;
+
+		if (g_Invaders.killed == 35)
+			g_Invaders.speed = 0.09f;
+
+		if (g_Invaders.killed == 39)
+			g_Invaders.speed = 0.10f;
 
 		CheckBulletsSaucerCollision(&saucer, ship);
 		CheckBulletsInvadersCollision(ship);
-		//CheckBulletsBarriersCollision(ship, barriers, gameResources);
-
-		CheckCollisionNewBarriers(ship, barriers, tex, pixels, pitch, gameResources);
-
-		DrawImage(tex, 150, 320, image->GetWidth(), image->GetHeight());
 		//Iw2DDrawString("Score = ", CIwFVec2(10, 10), CIwFVec2(50, 50), IW_2D_FONT_ALIGN_CENTRE, IW_2D_FONT_ALIGN_CENTRE);
 		//Draws Surface to screen
 		Iw2DSurfaceShow();
@@ -593,7 +618,9 @@ int main()
 	g_Input.Release();
 
 	delete image;
-	delete tex;
+	delete barrier_1;
+	delete barrier_2;
+	delete barrier_3;
 
 	for (std::vector<Barrier*>::iterator it = barriers->begin(); it != barriers->end(); ++it)
 		delete *it;

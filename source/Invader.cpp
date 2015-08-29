@@ -65,8 +65,8 @@ void Invader::Init(InvaderTypes invadertype, CIw2DImage *AlienImage)
 		AlienSprite->m_AnchorX = 0.5;
 		AlienSprite->SetAnimDuration(3);
 
-		BoundingRect.x = AlienSprite->m_X - AlienAtals->GetFrameWidth()/2;
-		BoundingRect.y = AlienSprite->m_Y - AlienAtals->GetFrameHeight() / 2;
+		BoundingRect.x = 0;
+		BoundingRect.y = 0;
 		BoundingRect.w = (float)AlienAtals->GetFrameWidth();
 		BoundingRect.h = (float)AlienAtals->GetFrameHeight();
 
@@ -85,11 +85,12 @@ void Invader::Render()
 		Transform.ScaleRot(Scale);
 		Transform.SetTrans(Position);
 		Iw2DSetTransformMatrix(Transform);
+ 
 		AlienSprite->Render();
 	}
 
 	CIwFVec2 pos = Transform.t;
-	BoundingRect.x = pos.x ;
+	BoundingRect.x = pos.x;
 	BoundingRect.y = pos.y;
 	BoundingRect.w = (float)AlienAtals->GetFrameWidth();
 	BoundingRect.h = (float)AlienAtals->GetFrameHeight();
@@ -111,16 +112,7 @@ void Invader::Render()
 
 void Invader::Update(float dt)
 {
- 
-	if (AlienSprite->m_X > Iw2DGetSurfaceWidth() - 10 || AlienSprite->m_X < 2)
-	{
-		Hit = true;
-	}
-	else
-	{
-		Hit = false;
-	}
-
+  
 	//cnt-=dt;
 	//if (cnt < 0)
 	//{
